@@ -17,7 +17,7 @@
         "placement": [
           {
             "type": "minecraft:count",
-            "count": 0
+            "count": 16
           },
           {
             "type": "minecraft:random_offset",
@@ -50,6 +50,17 @@
                       0
                     ],
                     "type": "minecraft:matching_blocks"
+                  },
+                  "type": "minecraft:not"
+                },
+                {
+                  "predicate": {
+                    "offset": [
+                      0,
+                      -1,
+                      0
+                    ],
+                    "type": "minecraft:replaceable"
                   },
                   "type": "minecraft:not"
                 }

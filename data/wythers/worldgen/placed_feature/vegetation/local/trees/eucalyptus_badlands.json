@@ -24,6 +24,10 @@
       "chance": 3
     },
     {
+      "type": "minecraft:count",
+      "count": 4
+    },
+    {
       "type": "minecraft:height_range",
       "height": {
         "type": "minecraft:constant",

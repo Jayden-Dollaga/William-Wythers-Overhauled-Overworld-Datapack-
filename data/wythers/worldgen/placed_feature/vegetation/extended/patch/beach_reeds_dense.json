@@ -39,7 +39,7 @@
     },
     {
       "type": "minecraft:count",
-      "count": 1
+      "count": 4
     },
     {
       "type": "minecraft:heightmap",
@@ -50,7 +50,7 @@
     },
     {
       "type": "minecraft:count",
-      "count": 2
+      "count": 4
     }
   ]
 }

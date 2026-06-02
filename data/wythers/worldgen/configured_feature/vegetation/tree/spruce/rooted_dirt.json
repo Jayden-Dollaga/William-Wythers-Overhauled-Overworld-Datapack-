@@ -17,7 +17,7 @@
         "placement": [
           {
             "type": "minecraft:count",
-            "count": 0
+            "count": 16
           },
           {
             "type": "minecraft:random_offset",

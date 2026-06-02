@@ -4,29 +4,29 @@
     "config": {
       "features": [
         {
-          "chance": 0.3,
+          "chance": 0.15,
           "feature": {
             "feature": "wythers:vegetation/tree/pine",
             "placement": []
           }
         },
         {
-          "chance": 0.25,
+          "chance": 0.15,
           "feature": {
-            "feature": "wythers:vegetation/tree/maple_tall",
+            "feature": "wythers:vegetation/tree/birch",
             "placement": []
           }
         },
         {
-          "chance": 0.25,
+          "chance": 0.1,
           "feature": {
-            "feature": "wythers:vegetation/tree/birch",
+            "feature": "wythers:vegetation/tree/azalea_conifer",
             "placement": []
           }
         }
       ],
       "default": {
-        "feature": "wythers:vegetation/tree/azalea_conifer",
+        "feature": "wythers:vegetation/tree/maple_tall",
         "placement": []
       }
     }
@@ -81,7 +81,7 @@
     },
     {
       "type": "minecraft:count",
-      "count": 15
+      "count": 32
     },
     {
       "type": "minecraft:height_range",

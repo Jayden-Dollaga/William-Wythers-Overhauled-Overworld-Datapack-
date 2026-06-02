@@ -161,7 +161,28 @@
                               "offset": 3,
                               "height": 5
                             },
-                            "decorators": [],
+                            "decorators": [
+                              {
+                                "type": "minecraft:alter_ground",
+                                "provider": {
+                                  "type": "minecraft:rule_based_state_provider",
+                                  "rules": [
+                                    {
+                                      "if_true": {
+                                        "type": "minecraft:matching_block_tag",
+                                        "tag": "minecraft:beneath_tree_podzol_replaceable"
+                                      },
+                                      "then": {
+                                        "type": "minecraft:simple_state_provider",
+                                        "state": {
+                                          "Name": "minecraft:rooted_dirt"
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ],
                             "below_trunk_provider": {
                               "type": "minecraft:rule_based_state_provider",
                               "rules": [
@@ -250,6 +271,26 @@
                                 "directions": [
                                   "down"
                                 ]
+                              },
+                              {
+                                "type": "minecraft:alter_ground",
+                                "provider": {
+                                  "type": "minecraft:rule_based_state_provider",
+                                  "rules": [
+                                    {
+                                      "if_true": {
+                                        "type": "minecraft:matching_block_tag",
+                                        "tag": "minecraft:beneath_tree_podzol_replaceable"
+                                      },
+                                      "then": {
+                                        "type": "minecraft:simple_state_provider",
+                                        "state": {
+                                          "Name": "minecraft:rooted_dirt"
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
                               }
                             ],
                             "below_trunk_provider": {
@@ -340,6 +381,26 @@
                                 "directions": [
                                   "down"
                                 ]
+                              },
+                              {
+                                "type": "minecraft:alter_ground",
+                                "provider": {
+                                  "type": "minecraft:rule_based_state_provider",
+                                  "rules": [
+                                    {
+                                      "if_true": {
+                                        "type": "minecraft:matching_block_tag",
+                                        "tag": "minecraft:beneath_tree_podzol_replaceable"
+                                      },
+                                      "then": {
+                                        "type": "minecraft:simple_state_provider",
+                                        "state": {
+                                          "Name": "minecraft:rooted_dirt"
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
                               }
                             ],
                             "below_trunk_provider": {
@@ -482,35 +543,6 @@
                   {
                     "type": "minecraft:count",
                     "count": 38
-                  }
-                ]
-              },
-              {
-                "feature": "wythers:vegetation/tree/dead_spruce/rooted_dirt",
-                "placement": [
-                  {
-                    "type": "minecraft:block_predicate_filter",
-                    "predicate": {
-                      "type": "minecraft:all_of",
-                      "predicates": [
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "blocks": "minecraft:stripped_spruce_log"
-                        },
-                        {
-                          "type": "minecraft:not",
-                          "predicate": {
-                            "type": "minecraft:matching_blocks",
-                            "offset": [
-                              0,
-                              -1,
-                              0
-                            ],
-                            "blocks": "minecraft:stripped_spruce_log"
-                          }
-                        }
-                      ]
-                    }
                   }
                 ]
               }

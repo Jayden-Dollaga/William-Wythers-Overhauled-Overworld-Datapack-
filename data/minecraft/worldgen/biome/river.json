@@ -85,7 +85,9 @@
       "wythers:terrain/local/riverbank_sand",
       "wythers:terrain/local/riverbank_red_sand",
       "wythers:terrain/local/riverbank_packed_mud",
-      "wythers:terrain/local/river_boulders_mossy"
+      "wythers:terrain/local/river_boulders_mossy",
+      "wythers:terrain/local/stone_boulders",
+      "wythers:terrain/local/diorite_boulders"
     ],
     [
       "minecraft:ore_dirt",
@@ -139,14 +141,11 @@
     ],
     [
       "minecraft:glow_lichen",
+      "wythers:vegetation/local/trees/willows",
       "wythers:terrain/feature/danakil_desert_mounds",
       "wythers:vegetation/local/patch/grass_standard",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "wythers:vegetation/extended/trees/live_oaks",
-      "wythers:vegetation/local/trees/jungle_river",
-      "wythers:vegetation/extended/trees/river_acacias",
-      "wythers:vegetation/extended/trees/river_tropical",
       "wythers:vegetation/extended/patch/beach_reeds_dense",
       "wythers:vegetation/extended/patch/seagrass_jungle"
     ],

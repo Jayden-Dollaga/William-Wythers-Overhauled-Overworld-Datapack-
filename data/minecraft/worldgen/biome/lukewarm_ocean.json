@@ -120,6 +120,7 @@
     [
       "minecraft:glow_lichen",
       "wythers:vegetation/local/trees/jungle_island",
+      "wythers:vegetation/local/trees/jungle_island_bent",
       "wythers:vegetation/local/patch/pineapples",
       "wythers:vegetation/local/patch/island_grass",
       "minecraft:brown_mushroom_normal",

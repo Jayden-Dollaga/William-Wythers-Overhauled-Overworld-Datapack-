@@ -101,6 +101,8 @@
     ],
     [
       "minecraft:glow_lichen",
+      "wythers:vegetation/local/trees/jungle_island",
+      "wythers:vegetation/local/trees/jungle_island_bent",
       "minecraft:patch_grass_badlands",
       "minecraft:patch_dry_grass_desert",
       "minecraft:brown_mushroom_normal",
