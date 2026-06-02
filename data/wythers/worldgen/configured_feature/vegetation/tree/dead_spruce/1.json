@@ -169,18 +169,8 @@
                                   "rules": [
                                     {
                                       "if_true": {
-                                        "type": "minecraft:matching_blocks",
-                                        "blocks": [
-                                          "minecraft:dirt",
-                                          "minecraft:grass_block",
-                                          "minecraft:podzol",
-                                          "minecraft:coarse_dirt",
-                                          "minecraft:mycelium",
-                                          "minecraft:moss_block",
-                                          "minecraft:muddy_mangrove_roots",
-                                          "minecraft:mud",
-                                          "minecraft:rooted_dirt"
-                                        ]
+                                        "type": "minecraft:matching_block_tag",
+                                        "tag": "minecraft:beneath_tree_podzol_replaceable"
                                       },
                                       "then": {
                                         "type": "minecraft:simple_state_provider",
@@ -289,18 +279,8 @@
                                   "rules": [
                                     {
                                       "if_true": {
-                                        "type": "minecraft:matching_blocks",
-                                        "blocks": [
-                                          "minecraft:dirt",
-                                          "minecraft:grass_block",
-                                          "minecraft:podzol",
-                                          "minecraft:coarse_dirt",
-                                          "minecraft:mycelium",
-                                          "minecraft:moss_block",
-                                          "minecraft:muddy_mangrove_roots",
-                                          "minecraft:mud",
-                                          "minecraft:rooted_dirt"
-                                        ]
+                                        "type": "minecraft:matching_block_tag",
+                                        "tag": "minecraft:beneath_tree_podzol_replaceable"
                                       },
                                       "then": {
                                         "type": "minecraft:simple_state_provider",
@@ -409,18 +389,8 @@
                                   "rules": [
                                     {
                                       "if_true": {
-                                        "type": "minecraft:matching_blocks",
-                                        "blocks": [
-                                          "minecraft:dirt",
-                                          "minecraft:grass_block",
-                                          "minecraft:podzol",
-                                          "minecraft:coarse_dirt",
-                                          "minecraft:mycelium",
-                                          "minecraft:moss_block",
-                                          "minecraft:muddy_mangrove_roots",
-                                          "minecraft:mud",
-                                          "minecraft:rooted_dirt"
-                                        ]
+                                        "type": "minecraft:matching_block_tag",
+                                        "tag": "minecraft:beneath_tree_podzol_replaceable"
                                       },
                                       "then": {
                                         "type": "minecraft:simple_state_provider",

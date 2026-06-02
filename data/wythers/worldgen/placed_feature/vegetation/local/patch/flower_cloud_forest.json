@@ -328,10 +328,6 @@
       "heightmap": "MOTION_BLOCKING"
     },
     {
-      "type": "minecraft:count",
-      "count": 4
-    },
-    {
       "type": "minecraft:biome"
     }
   ]
