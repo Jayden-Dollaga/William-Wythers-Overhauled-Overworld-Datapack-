@@ -141,7 +141,6 @@
     ],
     [
       "minecraft:glow_lichen",
-      "wythers:vegetation/local/trees/willows",
       "wythers:terrain/feature/danakil_desert_mounds",
       "wythers:vegetation/local/patch/grass_standard",
       "minecraft:brown_mushroom_normal",

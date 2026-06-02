@@ -16,28 +16,7 @@
                               {
                                 "feature": {
                                   "config": {
-                                    "decorators": [
-                                      {
-                                        "type": "minecraft:alter_ground",
-                                        "provider": {
-                                          "type": "minecraft:rule_based_state_provider",
-                                          "rules": [
-                                            {
-                                              "if_true": {
-                                                "type": "minecraft:matching_block_tag",
-                                                "tag": "minecraft:beneath_tree_podzol_replaceable"
-                                              },
-                                              "then": {
-                                                "type": "minecraft:simple_state_provider",
-                                                "state": {
-                                                  "Name": "minecraft:rooted_dirt"
-                                                }
-                                              }
-                                            }
-                                          ]
-                                        }
-                                      }
-                                    ],
+                                    "decorators": [],
                                     "foliage_placer": {
                                       "height": 1,
                                       "offset": 0,
@@ -227,28 +206,7 @@
                               {
                                 "feature": {
                                   "config": {
-                                    "decorators": [
-                                      {
-                                        "type": "minecraft:alter_ground",
-                                        "provider": {
-                                          "type": "minecraft:rule_based_state_provider",
-                                          "rules": [
-                                            {
-                                              "if_true": {
-                                                "type": "minecraft:matching_block_tag",
-                                                "tag": "minecraft:beneath_tree_podzol_replaceable"
-                                              },
-                                              "then": {
-                                                "type": "minecraft:simple_state_provider",
-                                                "state": {
-                                                  "Name": "minecraft:rooted_dirt"
-                                                }
-                                              }
-                                            }
-                                          ]
-                                        }
-                                      }
-                                    ],
+                                    "decorators": [],
                                     "foliage_placer": {
                                       "height": 16,
                                       "offset": 0,
@@ -517,26 +475,6 @@
                                                 "probability": 0.75,
                                                 "required_empty_blocks": 1,
                                                 "type": "minecraft:attached_to_leaves"
-                                              },
-                                              {
-                                                "type": "minecraft:alter_ground",
-                                                "provider": {
-                                                  "type": "minecraft:rule_based_state_provider",
-                                                  "rules": [
-                                                    {
-                                                      "if_true": {
-                                                        "type": "minecraft:matching_block_tag",
-                                                        "tag": "minecraft:beneath_tree_podzol_replaceable"
-                                                      },
-                                                      "then": {
-                                                        "type": "minecraft:simple_state_provider",
-                                                        "state": {
-                                                          "Name": "minecraft:rooted_dirt"
-                                                        }
-                                                      }
-                                                    }
-                                                  ]
-                                                }
                                               }
                                             ],
                                             "foliage_placer": {
@@ -786,6 +724,35 @@
               },
               {
                 "feature": "wythers:vegetation/tree/huge_spruce/roots/5",
+                "placement": [
+                  {
+                    "predicate": {
+                      "type": "minecraft:all_of",
+                      "predicates": [
+                        {
+                          "blocks": "minecraft:spruce_log",
+                          "type": "minecraft:matching_blocks"
+                        },
+                        {
+                          "type": "minecraft:not",
+                          "predicate": {
+                            "blocks": "minecraft:spruce_log",
+                            "offset": [
+                              0,
+                              -1,
+                              0
+                            ],
+                            "type": "minecraft:matching_blocks"
+                          }
+                        }
+                      ]
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  }
+                ]
+              },
+              {
+                "feature": "wythers:vegetation/tree/huge_spruce/rooted_dirt/2",
                 "placement": [
                   {
                     "predicate": {
