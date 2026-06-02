@@ -117,6 +117,10 @@
           "absolute": 10
         }
       }
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING"
     }
   ]
 }

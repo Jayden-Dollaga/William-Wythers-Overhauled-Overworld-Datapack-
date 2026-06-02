@@ -202,6 +202,10 @@
       "heightmap": "MOTION_BLOCKING_NO_LEAVES"
     },
     {
+      "type": "minecraft:count",
+      "count": 4
+    },
+    {
       "type": "minecraft:biome"
     }
   ]
