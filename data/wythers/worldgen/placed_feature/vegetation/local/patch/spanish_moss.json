@@ -51,6 +51,10 @@
       "y_spread": -1
     },
     {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING"
+    },
+    {
       "type": "minecraft:biome"
     },
     {

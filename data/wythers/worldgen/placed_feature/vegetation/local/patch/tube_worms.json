@@ -193,6 +193,10 @@
   },
   "placement": [
     {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING"
+    },
+    {
       "type": "minecraft:biome"
     },
     {
