@@ -1,32 +1,52 @@
 {
   "feature": {
-    "type": "minecraft:random_patch",
+    "type": "minecraft:simple_random_selector",
     "config": {
-      "tries": 32,
-      "xz_spread": 7,
-      "y_spread": 3,
-      "feature": {
-        "feature": {
-          "type": "minecraft:simple_block",
-          "config": {
-            "to_place": {
-              "type": "minecraft:simple_state_provider",
-              "state": {
-                "Name": "minecraft:crimson_roots"
+      "features": [
+        {
+          "feature": {
+            "type": "minecraft:simple_block",
+            "config": {
+              "to_place": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:crimson_roots"
+                }
               }
             }
-          }
-        },
-        "placement": [
-          {
-            "type": "minecraft:block_predicate_filter",
-            "predicate": {
-              "type": "minecraft:matching_blocks",
-              "blocks": "minecraft:air"
+          },
+          "placement": [
+            {
+              "type": "minecraft:count",
+              "count": 32
+            },
+            {
+              "type": "minecraft:random_offset",
+              "xz_spread": {
+                "type": "minecraft:trapezoid",
+                "min": -7,
+                "max": 7,
+                "plateau": 0
+              },
+              "y_spread": {
+                "type": "minecraft:trapezoid",
+                "min": -3,
+                "max": 3,
+                "plateau": 0
+              }
+            },
+            {
+              "type": "minecraft:block_predicate_filter",
+              "predicate": {
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:air"
+                ]
+              }
             }
-          }
-        ]
-      }
+          ]
+        }
+      ]
     }
   },
   "placement": [
@@ -50,7 +70,9 @@
           -1,
           0
         ],
-        "blocks": "minecraft:crimson_nylium"
+        "blocks": [
+          "minecraft:crimson_nylium"
+        ]
       }
     },
     {

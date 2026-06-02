@@ -2,10 +2,11 @@
   "feature": {
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "sand"
+            "Name": "minecraft:sand"
           }
         },
         "rules": [
@@ -18,7 +19,7 @@
                 0
               ],
               "blocks": [
-                "air",
+                "minecraft:air",
                 "minecraft:water"
               ]
             },
@@ -56,14 +57,19 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
         "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:brown_terracotta"
+        "blocks": [
+          "minecraft:brown_terracotta"
+        ]
       }
     },
     {

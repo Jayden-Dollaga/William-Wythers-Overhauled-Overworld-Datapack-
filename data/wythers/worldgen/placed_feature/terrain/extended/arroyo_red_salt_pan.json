@@ -3,10 +3,11 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "calcite"
+            "Name": "minecraft:calcite"
           }
         },
         "rules": [
@@ -22,8 +23,8 @@
                     0
                   ],
                   "blocks": [
-                    "calcite",
-                    "white_concrete_powder"
+                    "minecraft:calcite",
+                    "minecraft:white_concrete_powder"
                   ]
                 },
                 {
@@ -34,8 +35,8 @@
                     0
                   ],
                   "blocks": [
-                    "calcite",
-                    "white_concrete_powder"
+                    "minecraft:calcite",
+                    "minecraft:white_concrete_powder"
                   ]
                 },
                 {
@@ -46,8 +47,8 @@
                     1
                   ],
                   "blocks": [
-                    "calcite",
-                    "white_concrete_powder"
+                    "minecraft:calcite",
+                    "minecraft:white_concrete_powder"
                   ]
                 },
                 {
@@ -58,8 +59,8 @@
                     -1
                   ],
                   "blocks": [
-                    "calcite",
-                    "white_concrete_powder"
+                    "minecraft:calcite",
+                    "minecraft:white_concrete_powder"
                   ]
                 }
               ]
@@ -85,7 +86,7 @@
               0
             ],
             "blocks": [
-              "air"
+              "minecraft:air"
             ]
           },
           {
@@ -93,7 +94,7 @@
             "blocks": [
               "minecraft:smooth_red_sandstone",
               "minecraft:red_sand",
-              "calcite"
+              "minecraft:calcite"
             ]
           },
           {
@@ -104,7 +105,7 @@
               0
             ],
             "blocks": [
-              "red_sandstone"
+              "minecraft:red_sandstone"
             ]
           },
           {
@@ -120,8 +121,8 @@
                     0
                   ],
                   "blocks": [
-                    "air",
-                    "water"
+                    "minecraft:air",
+                    "minecraft:water"
                   ]
                 }
               ]
@@ -140,7 +141,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -199,7 +203,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 62
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 62
+        }
       }
     }
   ]

@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:weighted_state_provider",
           "entries": [
@@ -27,7 +28,9 @@
           {
             "if_true": {
               "type": "minecraft:matching_blocks",
-              "blocks": "minecraft:grass_block"
+              "blocks": [
+                "minecraft:grass_block"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -154,7 +157,9 @@
               0,
               0
             ],
-            "blocks": "minecraft:grass_block"
+            "blocks": [
+              "minecraft:grass_block"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -163,7 +168,9 @@
               0,
               0
             ],
-            "blocks": "minecraft:grass_block"
+            "blocks": [
+              "minecraft:grass_block"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -172,7 +179,9 @@
               0,
               3
             ],
-            "blocks": "minecraft:grass_block"
+            "blocks": [
+              "minecraft:grass_block"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -181,7 +190,9 @@
               0,
               -3
             ],
-            "blocks": "minecraft:grass_block"
+            "blocks": [
+              "minecraft:grass_block"
+            ]
           }
         ]
       }

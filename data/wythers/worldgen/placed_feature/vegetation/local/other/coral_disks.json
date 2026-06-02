@@ -8,6 +8,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -18,7 +19,9 @@
               },
               "target": {
                 "type": "minecraft:matching_fluids",
-                "fluids": "#minecraft:water"
+                "fluids": [
+                  "minecraft:water"
+                ]
               },
               "radius": {
                 "type": "minecraft:uniform",
@@ -35,6 +38,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -45,7 +49,9 @@
               },
               "target": {
                 "type": "minecraft:matching_fluids",
-                "fluids": "#minecraft:water"
+                "fluids": [
+                  "minecraft:water"
+                ]
               },
               "radius": {
                 "type": "minecraft:uniform",
@@ -62,6 +68,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -72,7 +79,9 @@
               },
               "target": {
                 "type": "minecraft:matching_fluids",
-                "fluids": "#minecraft:water"
+                "fluids": [
+                  "minecraft:water"
+                ]
               },
               "radius": {
                 "type": "minecraft:uniform",
@@ -89,6 +98,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -99,7 +109,9 @@
               },
               "target": {
                 "type": "minecraft:matching_fluids",
-                "fluids": "#minecraft:water"
+                "fluids": [
+                  "minecraft:water"
+                ]
               },
               "radius": {
                 "type": "minecraft:uniform",
@@ -116,6 +128,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -126,7 +139,9 @@
               },
               "target": {
                 "type": "minecraft:matching_fluids",
-                "fluids": "#minecraft:water"
+                "fluids": [
+                  "minecraft:water"
+                ]
               },
               "radius": {
                 "type": "minecraft:uniform",
@@ -165,7 +180,9 @@
               1,
               0
             ],
-            "blocks": "minecraft:water"
+            "blocks": [
+              "minecraft:water"
+            ]
           },
           {
             "type": "minecraft:any_of",
@@ -246,7 +263,9 @@
                   -1,
                   0
                 ],
-                "blocks": "minecraft:water"
+                "blocks": [
+                  "minecraft:water"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -255,7 +274,9 @@
                   -1,
                   0
                 ],
-                "blocks": "minecraft:water"
+                "blocks": [
+                  "minecraft:water"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -264,7 +285,9 @@
                   -1,
                   2
                 ],
-                "blocks": "minecraft:water"
+                "blocks": [
+                  "minecraft:water"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -273,7 +296,9 @@
                   -1,
                   -2
                 ],
-                "blocks": "minecraft:water"
+                "blocks": [
+                  "minecraft:water"
+                ]
               }
             ]
           }

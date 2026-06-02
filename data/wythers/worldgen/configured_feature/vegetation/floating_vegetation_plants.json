@@ -1,34 +1,54 @@
 {
-  "type": "minecraft:random_patch",
+  "type": "minecraft:simple_random_selector",
   "config": {
-    "tries": 48,
-    "xz_spread": 3,
-    "y_spread": 3,
-    "feature": {
-  "feature": "wythers:vegetation/column/mix_floating_vegetation_plants",
-  "placement": [
-    {
-      "type": "minecraft:height_range",
-      "height": {
-        "absolute": 62
-      }
-    },
-    {
-      "type": "minecraft:block_predicate_filter",
-      "predicate": {
-        "type": "minecraft:matching_blocks",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "blocks": [
-          "minecraft:azalea_leaves"
+    "features": [
+      {
+        "feature": "wythers:vegetation/column/mix_floating_vegetation_plants",
+        "placement": [
+          {
+            "type": "minecraft:count",
+            "count": 48
+          },
+          {
+            "type": "minecraft:random_offset",
+            "xz_spread": {
+              "type": "minecraft:trapezoid",
+              "min": -3,
+              "max": 3,
+              "plateau": 0
+            },
+            "y_spread": {
+              "type": "minecraft:trapezoid",
+              "min": -3,
+              "max": 3,
+              "plateau": 0
+            }
+          },
+          {
+            "type": "minecraft:height_range",
+            "height": {
+              "type": "minecraft:constant",
+              "value": {
+                "absolute": 62
+              }
+            }
+          },
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "blocks": [
+                "minecraft:azalea_leaves"
+              ]
+            }
+          }
         ]
       }
-    }
-  ]
-}
-
+    ]
   }
 }

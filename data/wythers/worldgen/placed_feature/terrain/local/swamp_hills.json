@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -14,7 +15,7 @@
             "if_true": {
               "type": "minecraft:matching_blocks",
               "blocks": [
-                "stone"
+                "minecraft:stone"
               ]
             },
             "then": {
@@ -52,7 +53,7 @@
               "minecraft:dirt",
               "minecraft:rooted_dirt",
               "minecraft:mud",
-              "stone"
+              "minecraft:stone"
             ]
           },
           {
@@ -65,7 +66,7 @@
                 0
               ],
               "fluids": [
-                "water"
+                "minecraft:water"
               ]
             }
           }

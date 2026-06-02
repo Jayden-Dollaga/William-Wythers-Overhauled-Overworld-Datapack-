@@ -3,10 +3,11 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "calcite"
+            "Name": "minecraft:calcite"
           }
         },
         "rules": [
@@ -22,8 +23,8 @@
                     0
                   ],
                   "blocks": [
-                    "calcite",
-                    "white_concrete_powder"
+                    "minecraft:calcite",
+                    "minecraft:white_concrete_powder"
                   ]
                 },
                 {
@@ -34,8 +35,8 @@
                     0
                   ],
                   "blocks": [
-                    "calcite",
-                    "white_concrete_powder"
+                    "minecraft:calcite",
+                    "minecraft:white_concrete_powder"
                   ]
                 },
                 {
@@ -46,8 +47,8 @@
                     1
                   ],
                   "blocks": [
-                    "calcite",
-                    "white_concrete_powder"
+                    "minecraft:calcite",
+                    "minecraft:white_concrete_powder"
                   ]
                 },
                 {
@@ -58,8 +59,8 @@
                     -1
                   ],
                   "blocks": [
-                    "calcite",
-                    "white_concrete_powder"
+                    "minecraft:calcite",
+                    "minecraft:white_concrete_powder"
                   ]
                 }
               ]
@@ -85,10 +86,10 @@
               1
             ],
             "blocks": [
-              "air",
-              "short_dry_grass",
-              "tall_dry_grass",
-              "dead_bush"
+              "minecraft:air",
+              "minecraft:short_dry_grass",
+              "minecraft:tall_dry_grass",
+              "minecraft:dead_bush"
             ]
           },
           {
@@ -99,10 +100,10 @@
               0
             ],
             "blocks": [
-              "air",
-              "short_dry_grass",
-              "tall_dry_grass",
-              "dead_bush"
+              "minecraft:air",
+              "minecraft:short_dry_grass",
+              "minecraft:tall_dry_grass",
+              "minecraft:dead_bush"
             ]
           },
           {
@@ -113,10 +114,10 @@
               -1
             ],
             "blocks": [
-              "air",
-              "short_dry_grass",
-              "tall_dry_grass",
-              "dead_bush"
+              "minecraft:air",
+              "minecraft:short_dry_grass",
+              "minecraft:tall_dry_grass",
+              "minecraft:dead_bush"
             ]
           },
           {
@@ -127,10 +128,10 @@
               1
             ],
             "blocks": [
-              "air",
-              "short_dry_grass",
-              "tall_dry_grass",
-              "dead_bush"
+              "minecraft:air",
+              "minecraft:short_dry_grass",
+              "minecraft:tall_dry_grass",
+              "minecraft:dead_bush"
             ]
           },
           {
@@ -141,10 +142,10 @@
               0
             ],
             "blocks": [
-              "air",
-              "short_dry_grass",
-              "tall_dry_grass",
-              "dead_bush"
+              "minecraft:air",
+              "minecraft:short_dry_grass",
+              "minecraft:tall_dry_grass",
+              "minecraft:dead_bush"
             ]
           },
           {
@@ -155,10 +156,10 @@
               -1
             ],
             "blocks": [
-              "air",
-              "short_dry_grass",
-              "tall_dry_grass",
-              "dead_bush"
+              "minecraft:air",
+              "minecraft:short_dry_grass",
+              "minecraft:tall_dry_grass",
+              "minecraft:dead_bush"
             ]
           },
           {
@@ -169,10 +170,10 @@
               1
             ],
             "blocks": [
-              "air",
-              "short_dry_grass",
-              "tall_dry_grass",
-              "dead_bush"
+              "minecraft:air",
+              "minecraft:short_dry_grass",
+              "minecraft:tall_dry_grass",
+              "minecraft:dead_bush"
             ]
           },
           {
@@ -183,10 +184,10 @@
               0
             ],
             "blocks": [
-              "air",
-              "short_dry_grass",
-              "tall_dry_grass",
-              "dead_bush"
+              "minecraft:air",
+              "minecraft:short_dry_grass",
+              "minecraft:tall_dry_grass",
+              "minecraft:dead_bush"
             ]
           },
           {
@@ -197,10 +198,10 @@
               -1
             ],
             "blocks": [
-              "air",
-              "short_dry_grass",
-              "tall_dry_grass",
-              "dead_bush"
+              "minecraft:air",
+              "minecraft:short_dry_grass",
+              "minecraft:tall_dry_grass",
+              "minecraft:dead_bush"
             ]
           },
           {
@@ -211,7 +212,7 @@
               -1
             ],
             "blocks": [
-              "air"
+              "minecraft:air"
             ]
           },
           {
@@ -220,7 +221,7 @@
               "minecraft:smooth_red_sandstone",
               "minecraft:red_sandstone",
               "minecraft:red_sand",
-              "calcite"
+              "minecraft:calcite"
             ]
           },
           {
@@ -236,8 +237,8 @@
                     0
                   ],
                   "blocks": [
-                    "air",
-                    "water"
+                    "minecraft:air",
+                    "minecraft:water"
                   ]
                 }
               ]
@@ -256,7 +257,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -293,7 +297,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 61
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 61
+        }
       }
     }
   ]

@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -199,7 +200,9 @@
               },
               {
                 "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:dirt_path"
+                "blocks": [
+                  "minecraft:dirt_path"
+                ]
               }
             ]
           }
@@ -217,7 +220,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -259,7 +265,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 62
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 62
+        }
       }
     },
     {

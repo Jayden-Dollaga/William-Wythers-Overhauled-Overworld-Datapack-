@@ -40,7 +40,9 @@
       },
       "allowed_search_condition": {
         "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:air"
+        "blocks": [
+          "minecraft:air"
+        ]
       }
     },
     {
@@ -65,7 +67,9 @@
                 -5,
                 0
               ],
-              "blocks": "minecraft:rooted_dirt"
+              "blocks": [
+                "minecraft:rooted_dirt"
+              ]
             },
             {
               "type": "minecraft:matching_blocks",
@@ -74,7 +78,9 @@
                 -6,
                 0
               ],
-              "blocks": "minecraft:rooted_dirt"
+              "blocks": [
+                "minecraft:rooted_dirt"
+              ]
             },
             {
               "type": "minecraft:matching_blocks",
@@ -83,7 +89,9 @@
                 -7,
                 0
               ],
-              "blocks": "minecraft:rooted_dirt"
+              "blocks": [
+                "minecraft:rooted_dirt"
+              ]
             },
             {
               "type": "minecraft:matching_blocks",
@@ -92,7 +100,9 @@
                 -8,
                 0
               ],
-              "blocks": "minecraft:rooted_dirt"
+              "blocks": [
+                "minecraft:rooted_dirt"
+              ]
             },
             {
               "type": "minecraft:matching_blocks",
@@ -101,7 +111,9 @@
                 -9,
                 0
               ],
-              "blocks": "minecraft:rooted_dirt"
+              "blocks": [
+                "minecraft:rooted_dirt"
+              ]
             },
             {
               "type": "minecraft:matching_blocks",
@@ -110,7 +122,9 @@
                 -10,
                 0
               ],
-              "blocks": "minecraft:rooted_dirt"
+              "blocks": [
+                "minecraft:rooted_dirt"
+              ]
             },
             {
               "type": "minecraft:matching_blocks",
@@ -119,7 +133,9 @@
                 -11,
                 0
               ],
-              "blocks": "minecraft:rooted_dirt"
+              "blocks": [
+                "minecraft:rooted_dirt"
+              ]
             },
             {
               "type": "minecraft:matching_blocks",
@@ -128,7 +144,9 @@
                 -12,
                 0
               ],
-              "blocks": "minecraft:rooted_dirt"
+              "blocks": [
+                "minecraft:rooted_dirt"
+              ]
             },
             {
               "type": "minecraft:matching_blocks",
@@ -137,7 +155,9 @@
                 -13,
                 0
               ],
-              "blocks": "minecraft:rooted_dirt"
+              "blocks": [
+                "minecraft:rooted_dirt"
+              ]
             },
             {
               "type": "minecraft:matching_blocks",
@@ -146,7 +166,9 @@
                 -14,
                 0
               ],
-              "blocks": "minecraft:rooted_dirt"
+              "blocks": [
+                "minecraft:rooted_dirt"
+              ]
             },
             {
               "type": "minecraft:matching_blocks",
@@ -155,7 +177,9 @@
                 -15,
                 0
               ],
-              "blocks": "minecraft:rooted_dirt"
+              "blocks": [
+                "minecraft:rooted_dirt"
+              ]
             }
           ]
         }

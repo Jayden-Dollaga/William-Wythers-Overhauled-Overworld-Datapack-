@@ -25,7 +25,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 62
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 62
+        }
       }
     },
     {
@@ -37,7 +40,9 @@
           0,
           0
         ],
-        "fluids": "minecraft:water"
+        "fluids": [
+          "minecraft:water"
+        ]
       }
     },
     {

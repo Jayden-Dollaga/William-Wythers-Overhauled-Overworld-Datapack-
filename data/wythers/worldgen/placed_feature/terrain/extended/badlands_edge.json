@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -34,7 +35,9 @@
               1,
               0
             ],
-            "blocks": "minecraft:air"
+            "blocks": [
+              "minecraft:air"
+            ]
           },
           {
             "type": "minecraft:any_of",
@@ -250,7 +253,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -264,7 +270,9 @@
             2,
             0
           ],
-          "blocks": "minecraft:dripstone_block"
+          "blocks": [
+            "minecraft:dripstone_block"
+          ]
         }
       }
     },

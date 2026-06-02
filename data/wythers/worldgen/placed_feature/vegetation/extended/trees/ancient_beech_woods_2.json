@@ -34,7 +34,44 @@
     },
     {
       "type": "minecraft:heightmap",
-      "heightmap": "MOTION_BLOCKING"
+      "heightmap": "OCEAN_FLOOR"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:not",
+        "predicate": {
+          "type": "minecraft:any_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -2,
+                0
+              ],
+              "blocks": [
+                "minecraft:air",
+                "minecraft:cave_air",
+                "minecraft:void_air"
+              ]
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -3,
+                0
+              ],
+              "blocks": [
+                "minecraft:air",
+                "minecraft:cave_air",
+                "minecraft:void_air"
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "type": "minecraft:surface_water_depth_filter",
@@ -52,7 +89,9 @@
               -1,
               0
             ],
-            "blocks": "minecraft:mud"
+            "blocks": [
+              "minecraft:mud"
+            ]
           },
           {
             "type": "minecraft:any_of",
@@ -64,7 +103,9 @@
                   -2,
                   0
                 ],
-                "blocks": "minecraft:granite"
+                "blocks": [
+                  "minecraft:granite"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -73,7 +114,9 @@
                   -3,
                   0
                 ],
-                "blocks": "minecraft:granite"
+                "blocks": [
+                  "minecraft:granite"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -82,7 +125,9 @@
                   -4,
                   0
                 ],
-                "blocks": "minecraft:granite"
+                "blocks": [
+                  "minecraft:granite"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -91,7 +136,9 @@
                   -5,
                   0
                 ],
-                "blocks": "minecraft:granite"
+                "blocks": [
+                  "minecraft:granite"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -100,7 +147,9 @@
                   -6,
                   0
                 ],
-                "blocks": "minecraft:granite"
+                "blocks": [
+                  "minecraft:granite"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -109,7 +158,9 @@
                   -7,
                   0
                 ],
-                "blocks": "minecraft:granite"
+                "blocks": [
+                  "minecraft:granite"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -118,7 +169,9 @@
                   -8,
                   0
                 ],
-                "blocks": "minecraft:granite"
+                "blocks": [
+                  "minecraft:granite"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -127,7 +180,9 @@
                   -9,
                   0
                 ],
-                "blocks": "minecraft:granite"
+                "blocks": [
+                  "minecraft:granite"
+                ]
               }
             ]
           }
@@ -145,7 +200,9 @@
             -2,
             0
           ],
-          "blocks": "minecraft:coarse_dirt"
+          "blocks": [
+            "minecraft:coarse_dirt"
+          ]
         }
       }
     },

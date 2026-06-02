@@ -2,6 +2,7 @@
   "feature": {
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:weighted_state_provider",
           "entries": [
@@ -143,7 +144,7 @@
                 1
               ],
               "blocks": [
-                "jungle_wood"
+                "minecraft:jungle_wood"
               ]
             },
             "then": {
@@ -189,7 +190,7 @@
       "target": {
         "type": "minecraft:matching_blocks",
         "blocks": [
-          "air"
+          "minecraft:air"
         ]
       }
     },
@@ -211,7 +212,7 @@
               0
             ],
             "blocks": [
-              "jungle_wood"
+              "minecraft:jungle_wood"
             ]
           },
           {
@@ -225,7 +226,7 @@
                   0
                 ],
                 "blocks": [
-                  "jungle_wood"
+                  "minecraft:jungle_wood"
                 ]
               },
               {
@@ -236,7 +237,7 @@
                   0
                 ],
                 "blocks": [
-                  "jungle_wood"
+                  "minecraft:jungle_wood"
                 ]
               },
               {
@@ -247,7 +248,7 @@
                   1
                 ],
                 "blocks": [
-                  "jungle_wood"
+                  "minecraft:jungle_wood"
                 ]
               },
               {
@@ -258,7 +259,7 @@
                   -1
                 ],
                 "blocks": [
-                  "jungle_wood"
+                  "minecraft:jungle_wood"
                 ]
               }
             ]

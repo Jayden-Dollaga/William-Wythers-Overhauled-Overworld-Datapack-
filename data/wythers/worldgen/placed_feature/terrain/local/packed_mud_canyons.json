@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -35,9 +36,9 @@
           {
             "type": "minecraft:matching_blocks",
             "blocks": [
-              "stone",
-              "andesite",
-              "gravel"
+              "minecraft:stone",
+              "minecraft:andesite",
+              "minecraft:gravel"
             ]
           },
           {
@@ -110,7 +111,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -125,7 +129,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 1
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 1
+        }
       }
     },
     {

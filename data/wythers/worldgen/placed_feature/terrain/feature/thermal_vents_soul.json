@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -85,7 +86,9 @@
                           2,
                           0
                         ],
-                        "blocks": "minecraft:dripstone_block"
+                        "blocks": [
+                          "minecraft:dripstone_block"
+                        ]
                       },
                       {
                         "type": "minecraft:matching_blocks",
@@ -94,7 +97,9 @@
                           2,
                           0
                         ],
-                        "blocks": "minecraft:dripstone_block"
+                        "blocks": [
+                          "minecraft:dripstone_block"
+                        ]
                       },
                       {
                         "type": "minecraft:matching_blocks",
@@ -103,7 +108,9 @@
                           2,
                           1
                         ],
-                        "blocks": "minecraft:dripstone_block"
+                        "blocks": [
+                          "minecraft:dripstone_block"
+                        ]
                       },
                       {
                         "type": "minecraft:matching_blocks",
@@ -112,7 +119,9 @@
                           2,
                           -1
                         ],
-                        "blocks": "minecraft:dripstone_block"
+                        "blocks": [
+                          "minecraft:dripstone_block"
+                        ]
                       }
                     ]
                   }
@@ -130,7 +139,9 @@
       },
       "target": {
         "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:dripstone_block"
+        "blocks": [
+          "minecraft:dripstone_block"
+        ]
       },
       "radius": 3,
       "half_height": 1

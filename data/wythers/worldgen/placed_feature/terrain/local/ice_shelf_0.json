@@ -2,10 +2,11 @@
   "feature": {
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "packed_ice"
+            "Name": "minecraft:packed_ice"
           }
         },
         "rules": []
@@ -29,8 +30,8 @@
               0
             ],
             "blocks": [
-              "packed_ice",
-              "blue_ice"
+              "minecraft:packed_ice",
+              "minecraft:blue_ice"
             ]
           }
         ]
@@ -42,7 +43,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -72,7 +76,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 59
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 59
+        }
       }
     },
     {

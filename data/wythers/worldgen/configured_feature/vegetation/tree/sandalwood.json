@@ -2,21 +2,11 @@
   "type": "minecraft:tree",
   "config": {
     "ignore_vines": true,
-    "force_dirt": true,
     "minimum_size": {
       "type": "minecraft:two_layers_feature_size",
       "limit": 1,
       "lower_size": 0,
       "upper_size": 2
-    },
-    "dirt_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "minecraft:acacia_log",
-        "Properties": {
-          "axis": "y"
-        }
-      }
     },
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
@@ -53,27 +43,38 @@
       {
         "type": "minecraft:alter_ground",
         "provider": {
-          "type": "minecraft:weighted_state_provider",
-          "entries": [
+          "type": "minecraft:rule_based_state_provider",
+          "rules": [
             {
-              "weight": 4,
-              "data": {
-                "Name": "minecraft:grass_block",
-                "Properties": {
-                  "snowy": "false"
-                }
-              }
-            },
-            {
-              "weight": 1,
-              "data": {
-                "Name": "minecraft:coarse_dirt"
-              }
-            },
-            {
-              "weight": 1,
-              "data": {
-                "Name": "minecraft:rooted_dirt"
+              "if_true": {
+                "type": "minecraft:matching_block_tag",
+                "tag": "minecraft:beneath_tree_podzol_replaceable"
+              },
+              "then": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                  {
+                    "weight": 4,
+                    "data": {
+                      "Name": "minecraft:grass_block",
+                      "Properties": {
+                        "snowy": "false"
+                      }
+                    }
+                  },
+                  {
+                    "weight": 1,
+                    "data": {
+                      "Name": "minecraft:coarse_dirt"
+                    }
+                  },
+                  {
+                    "weight": 1,
+                    "data": {
+                      "Name": "minecraft:rooted_dirt"
+                    }
+                  }
+                ]
               }
             }
           ]
@@ -83,6 +84,25 @@
         "type": "minecraft:leave_vine",
         "probability": 0.1
       }
-    ]
+    ],
+    "below_trunk_provider": {
+      "type": "minecraft:rule_based_state_provider",
+      "rules": [
+        {
+          "if_true": {
+            "type": "minecraft:true"
+          },
+          "then": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:acacia_log",
+              "Properties": {
+                "axis": "y"
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

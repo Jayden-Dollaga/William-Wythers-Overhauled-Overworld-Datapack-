@@ -7,6 +7,7 @@
           "feature": {
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -37,7 +38,7 @@
                     "type": "minecraft:matching_blocks",
                     "blocks": [
                       "minecraft:grass_block",
-                      "packed_mud"
+                      "minecraft:packed_mud"
                     ]
                   }
                 ]
@@ -58,7 +59,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 62
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 62
+        }
       }
     },
     {
@@ -68,7 +72,9 @@
       "type": "minecraft:block_predicate_filter",
       "predicate": {
         "type": "minecraft:matching_fluids",
-        "fluids": "#minecraft:water"
+        "fluids": [
+          "minecraft:water"
+        ]
       }
     },
     {

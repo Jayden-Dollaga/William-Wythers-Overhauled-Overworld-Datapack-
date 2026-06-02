@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -62,7 +63,9 @@
                             0,
                             0
                           ],
-                          "blocks": "minecraft:mycelium"
+                          "blocks": [
+                            "minecraft:mycelium"
+                          ]
                         }
                       }
                     ]
@@ -91,7 +94,9 @@
                             0,
                             0
                           ],
-                          "blocks": "minecraft:mycelium"
+                          "blocks": [
+                            "minecraft:mycelium"
+                          ]
                         }
                       }
                     ]
@@ -120,7 +125,9 @@
                             0,
                             -1
                           ],
-                          "blocks": "minecraft:mycelium"
+                          "blocks": [
+                            "minecraft:mycelium"
+                          ]
                         }
                       }
                     ]
@@ -149,7 +156,9 @@
                             0,
                             1
                           ],
-                          "blocks": "minecraft:mycelium"
+                          "blocks": [
+                            "minecraft:mycelium"
+                          ]
                         }
                       }
                     ]
@@ -194,7 +203,9 @@
                       0,
                       0
                     ],
-                    "blocks": "minecraft:air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -203,7 +214,9 @@
                       0,
                       0
                     ],
-                    "blocks": "minecraft:air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -212,7 +225,9 @@
                       0,
                       1
                     ],
-                    "blocks": "minecraft:air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -221,7 +236,9 @@
                       0,
                       -1
                     ],
-                    "blocks": "minecraft:air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -230,7 +247,9 @@
                       1,
                       0
                     ],
-                    "blocks": "minecraft:basalt"
+                    "blocks": [
+                      "minecraft:basalt"
+                    ]
                   }
                 ]
               }

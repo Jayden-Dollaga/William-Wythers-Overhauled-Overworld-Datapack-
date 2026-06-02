@@ -14,7 +14,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 0
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 0
+        }
       }
     },
     {
@@ -28,7 +31,44 @@
     },
     {
       "type": "minecraft:heightmap",
-      "heightmap": "MOTION_BLOCKING"
+      "heightmap": "OCEAN_FLOOR"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:not",
+        "predicate": {
+          "type": "minecraft:any_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -2,
+                0
+              ],
+              "blocks": [
+                "minecraft:air",
+                "minecraft:cave_air",
+                "minecraft:void_air"
+              ]
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -3,
+                0
+              ],
+              "blocks": [
+                "minecraft:air",
+                "minecraft:cave_air",
+                "minecraft:void_air"
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "type": "minecraft:block_predicate_filter",
@@ -150,7 +190,9 @@
           -2,
           0
         ],
-        "blocks": "minecraft:rooted_dirt"
+        "blocks": [
+          "minecraft:rooted_dirt"
+        ]
       }
     },
     {
@@ -162,7 +204,9 @@
           -3,
           0
         ],
-        "blocks": "minecraft:rooted_dirt"
+        "blocks": [
+          "minecraft:rooted_dirt"
+        ]
       }
     }
   ]

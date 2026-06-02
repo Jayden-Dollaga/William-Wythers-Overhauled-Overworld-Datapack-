@@ -7,44 +7,48 @@
           "feature": {
             "feature": "wythers:vegetation/patch/floating_leaves_with_pink_petals",
             "placement": [
-            {
-              "type": "minecraft:block_predicate_filter",
-              "predicate": {
-                "type": "minecraft:not",
+              {
+                "type": "minecraft:block_predicate_filter",
                 "predicate": {
-                  "type": "minecraft:matching_fluids",
-                  "offset": [
-                    0,
-                    -4,
-                    0
-                  ],
-                  "fluids": "minecraft:water"
+                  "type": "minecraft:not",
+                  "predicate": {
+                    "type": "minecraft:matching_fluids",
+                    "offset": [
+                      0,
+                      -4,
+                      0
+                    ],
+                    "fluids": [
+                      "minecraft:water"
+                    ]
+                  }
                 }
               }
-            }
-          ]
+            ]
           }
         }
       ],
       "default": {
         "feature": "wythers:vegetation/patch/floating_leaves_with_pink_petals",
         "placement": [
-            {
-              "type": "minecraft:block_predicate_filter",
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:not",
               "predicate": {
-                "type": "minecraft:not",
-                "predicate": {
-                  "type": "minecraft:matching_fluids",
-                  "offset": [
-                    0,
-                    -6,
-                    0
-                  ],
-                  "fluids": "minecraft:water"
-                }
+                "type": "minecraft:matching_fluids",
+                "offset": [
+                  0,
+                  -6,
+                  0
+                ],
+                "fluids": [
+                  "minecraft:water"
+                ]
               }
             }
-          ]
+          }
+        ]
       }
     },
     "type": "minecraft:random_selector"
@@ -53,7 +57,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -66,7 +73,9 @@
             "predicates": [
               {
                 "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:cut_sandstone"
+                "blocks": [
+                  "minecraft:cut_sandstone"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -75,7 +84,9 @@
                   1,
                   0
                 ],
-                "blocks": "minecraft:moss_block"
+                "blocks": [
+                  "minecraft:moss_block"
+                ]
               }
             ]
           },
@@ -84,7 +95,9 @@
             "predicates": [
               {
                 "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:acacia_wood"
+                "blocks": [
+                  "minecraft:acacia_wood"
+                ]
               },
               {
                 "type": "minecraft:not",
@@ -95,7 +108,9 @@
                     1,
                     0
                   ],
-                  "blocks": "minecraft:dripstone_block"
+                  "blocks": [
+                    "minecraft:dripstone_block"
+                  ]
                 }
               }
             ]

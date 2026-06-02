@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -33,7 +34,9 @@
                     4,
                     0
                   ],
-                  "blocks": "minecraft:cave_air"
+                  "blocks": [
+                    "minecraft:cave_air"
+                  ]
                 }
               ]
             },
@@ -58,7 +61,7 @@
             ],
             "blocks": [
               "minecraft:cave_air",
-              "air",
+              "minecraft:air",
               "minecraft:powder_snow",
               "minecraft:snow"
             ]
@@ -141,7 +144,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -219,7 +225,7 @@
                 0
               ],
               "blocks": [
-                "water"
+                "minecraft:water"
               ]
             }
           }

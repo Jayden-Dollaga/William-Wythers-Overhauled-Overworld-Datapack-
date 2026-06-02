@@ -68,7 +68,9 @@
           -1,
           0
         ],
-        "blocks": "minecraft:mycelium"
+        "blocks": [
+          "minecraft:mycelium"
+        ]
       }
     },
     {

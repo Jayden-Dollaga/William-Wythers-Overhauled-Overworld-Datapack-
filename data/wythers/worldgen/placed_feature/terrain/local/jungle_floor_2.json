@@ -3,25 +3,26 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:weighted_state_provider",
           "entries": [
             {
               "weight": 1,
               "data": {
-                "Name": "packed_mud"
+                "Name": "minecraft:packed_mud"
               }
             },
             {
               "weight": 1,
               "data": {
-                "Name": "rooted_dirt"
+                "Name": "minecraft:rooted_dirt"
               }
             },
             {
               "weight": 1,
               "data": {
-                "Name": "coarse_dirt"
+                "Name": "minecraft:coarse_dirt"
               }
             }
           ]
@@ -42,7 +43,7 @@
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "rooted_dirt"
+                "Name": "minecraft:rooted_dirt"
               }
             }
           }
@@ -74,7 +75,7 @@
                   0
                 ],
                 "blocks": [
-                  "rooted_dirt"
+                  "minecraft:rooted_dirt"
                 ]
               }
             ]
@@ -116,7 +117,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -127,28 +131,28 @@
           {
             "type": "minecraft:all_of",
             "predicates": [
-                  {
-                    "type": "minecraft:matching_blocks",
-                    "blocks": [
-                      "minecraft:lime_terracotta",
-					  "minecraft:jungle_wood"
-                    ]
-                  },
-                  {
-                    "type": "minecraft:not",
-                    "predicate": {
-                      "type": "minecraft:matching_blocks",
-                      "offset": [
-                        0,
-                        1,
-                        0
-                      ],
-                      "blocks": [
-                        "minecraft:moss_block"
-                      ]
-                    }
-                  }
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:lime_terracotta",
+                  "minecraft:jungle_wood"
                 ]
+              },
+              {
+                "type": "minecraft:not",
+                "predicate": {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "blocks": [
+                    "minecraft:moss_block"
+                  ]
+                }
+              }
+            ]
           }
         ]
       }
@@ -180,7 +184,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 0
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 0
+        }
       }
     },
     {

@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -20,7 +21,7 @@
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "dark_oak_log"
+                "Name": "minecraft:dark_oak_log"
               }
             }
           },
@@ -34,7 +35,7 @@
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "stripped_dark_oak_wood"
+                "Name": "minecraft:stripped_dark_oak_wood"
               }
             }
           }
@@ -75,7 +76,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     }
   ]

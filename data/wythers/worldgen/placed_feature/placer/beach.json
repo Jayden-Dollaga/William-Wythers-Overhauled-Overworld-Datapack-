@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -14,8 +15,8 @@
             "if_true": {
               "type": "minecraft:matching_blocks",
               "blocks": [
-                "coarse_dirt",
-                "rooted_dirt"
+                "minecraft:coarse_dirt",
+                "minecraft:rooted_dirt"
               ]
             },
             "then": {
@@ -29,7 +30,7 @@
             "if_true": {
               "type": "minecraft:matching_blocks",
               "blocks": [
-                "oak_wood"
+                "minecraft:oak_wood"
               ]
             },
             "then": {
@@ -39,7 +40,7 @@
               }
             }
           }
-         ]
+        ]
       },
       "target": {
         "type": "minecraft:all_of",
@@ -81,7 +82,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     }
   ]

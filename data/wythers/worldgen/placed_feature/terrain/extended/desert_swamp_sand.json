@@ -3,10 +3,11 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "sand"
+            "Name": "minecraft:sand"
           }
         },
         "rules": [
@@ -23,7 +24,7 @@
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "smooth_sandstone"
+                "Name": "minecraft:smooth_sandstone"
               }
             }
           },
@@ -37,7 +38,7 @@
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "smooth_sandstone"
+                "Name": "minecraft:smooth_sandstone"
               }
             }
           }
@@ -52,10 +53,10 @@
       "target": {
         "type": "minecraft:matching_blocks",
         "blocks": [
-          "rooted_dirt",
-          "dirt",
-          "packed_mud",
-          "mud"
+          "minecraft:rooted_dirt",
+          "minecraft:dirt",
+          "minecraft:packed_mud",
+          "minecraft:mud"
         ]
       }
     }
@@ -64,7 +65,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -100,7 +104,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 0
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 0
+        }
       }
     },
     {

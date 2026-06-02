@@ -30,7 +30,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 2
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 2
+        }
       }
     },
     {

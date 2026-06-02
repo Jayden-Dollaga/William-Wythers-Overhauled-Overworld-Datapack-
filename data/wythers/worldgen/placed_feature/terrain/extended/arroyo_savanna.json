@@ -19,7 +19,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -34,7 +37,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 1
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 1
+        }
       }
     },
     {

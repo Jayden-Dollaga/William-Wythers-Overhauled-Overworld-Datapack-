@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -18,7 +19,7 @@
             "type": "minecraft:matching_blocks",
             "blocks": [
               "minecraft:grass_block",
-              "dirt",
+              "minecraft:dirt",
               "minecraft:coarse_dirt",
               "minecraft:rooted_dirt",
               "minecraft:dirt_path"
@@ -38,7 +39,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {

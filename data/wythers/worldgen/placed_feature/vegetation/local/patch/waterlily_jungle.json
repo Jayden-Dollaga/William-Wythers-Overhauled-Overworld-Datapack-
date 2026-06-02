@@ -52,7 +52,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -78,7 +81,9 @@
                   1,
                   0
                 ],
-                "blocks": "minecraft:moss_block"
+                "blocks": [
+                  "minecraft:moss_block"
+                ]
               }
             ]
           }

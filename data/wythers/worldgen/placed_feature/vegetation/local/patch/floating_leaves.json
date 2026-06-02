@@ -16,7 +16,9 @@
                     -2,
                     0
                   ],
-                  "blocks": "water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 }
               }
             }

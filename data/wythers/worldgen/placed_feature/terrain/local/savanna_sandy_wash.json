@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -16,7 +17,9 @@
               "predicates": [
                 {
                   "type": "minecraft:matching_blocks",
-                  "blocks": "minecraft:smooth_sandstone"
+                  "blocks": [
+                    "minecraft:smooth_sandstone"
+                  ]
                 },
                 {
                   "type": "minecraft:not",
@@ -27,7 +30,9 @@
                       -1,
                       0
                     ],
-                    "fluids": "#minecraft:water"
+                    "fluids": [
+                      "minecraft:water"
+                    ]
                   }
                 }
               ]
@@ -45,17 +50,21 @@
               "predicates": [
                 {
                   "type": "minecraft:matching_blocks",
-                  "blocks": "minecraft:smooth_sandstone"
+                  "blocks": [
+                    "minecraft:smooth_sandstone"
+                  ]
                 },
                 {
-                    "type": "minecraft:matching_fluids",
-                    "offset": [
-                      0,
-                      -1,
-                      0
-                    ],
-                    "fluids": "#minecraft:water"
-                  }
+                  "type": "minecraft:matching_fluids",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "fluids": [
+                    "minecraft:water"
+                  ]
+                }
               ]
             },
             "then": {
@@ -71,7 +80,9 @@
               "predicates": [
                 {
                   "type": "minecraft:matching_blocks",
-                  "blocks": "minecraft:red_sandstone"
+                  "blocks": [
+                    "minecraft:red_sandstone"
+                  ]
                 },
                 {
                   "type": "minecraft:not",
@@ -82,7 +93,9 @@
                       -1,
                       0
                     ],
-                    "fluids": "#minecraft:water"
+                    "fluids": [
+                      "minecraft:water"
+                    ]
                   }
                 }
               ]
@@ -100,17 +113,21 @@
               "predicates": [
                 {
                   "type": "minecraft:matching_blocks",
-                  "blocks": "minecraft:red_sandstone"
+                  "blocks": [
+                    "minecraft:red_sandstone"
+                  ]
                 },
                 {
-                    "type": "minecraft:matching_fluids",
-                    "offset": [
-                      0,
-                      -1,
-                      0
-                    ],
-                    "fluids": "#minecraft:water"
-                  }
+                  "type": "minecraft:matching_fluids",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "fluids": [
+                    "minecraft:water"
+                  ]
+                }
               ]
             },
             "then": {
@@ -128,8 +145,8 @@
           {
             "type": "minecraft:matching_blocks",
             "blocks": [
-              "packed_mud",
-              "grass_block",
+              "minecraft:packed_mud",
+              "minecraft:grass_block",
               "minecraft:smooth_sandstone",
               "minecraft:red_sandstone"
             ]
@@ -142,7 +159,7 @@
               0
             ],
             "blocks": [
-              "air"
+              "minecraft:air"
             ]
           }
         ]
@@ -155,7 +172,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -180,7 +200,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 62
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 62
+        }
       }
     },
     {

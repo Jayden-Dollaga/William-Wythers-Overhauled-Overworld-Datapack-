@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -189,7 +190,9 @@
         "predicates": [
           {
             "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:packed_mud"
+            "blocks": [
+              "minecraft:packed_mud"
+            ]
           },
           {
             "type": "minecraft:not",
@@ -203,7 +206,9 @@
                     1,
                     0
                   ],
-                  "blocks": "minecraft:grass_block"
+                  "blocks": [
+                    "minecraft:grass_block"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -212,7 +217,9 @@
                     2,
                     0
                   ],
-                  "blocks": "minecraft:grass_block"
+                  "blocks": [
+                    "minecraft:grass_block"
+                  ]
                 }
               ]
             }
@@ -227,7 +234,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {

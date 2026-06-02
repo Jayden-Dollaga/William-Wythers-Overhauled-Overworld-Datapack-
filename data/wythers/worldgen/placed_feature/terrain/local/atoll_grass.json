@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -24,7 +25,9 @@
               3,
               0
             ],
-            "blocks": "minecraft:air"
+            "blocks": [
+              "minecraft:air"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -33,7 +36,9 @@
               2,
               0
             ],
-            "blocks": "minecraft:air"
+            "blocks": [
+              "minecraft:air"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -42,7 +47,9 @@
               1,
               0
             ],
-            "blocks": "minecraft:air"
+            "blocks": [
+              "minecraft:air"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -63,7 +70,9 @@
                     0,
                     0
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -72,7 +81,9 @@
                     0,
                     0
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -81,7 +92,9 @@
                     0,
                     4
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -90,7 +103,9 @@
                     0,
                     -4
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -99,7 +114,9 @@
                     0,
                     2
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -108,7 +125,9 @@
                     0,
                     1
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -117,7 +136,9 @@
                     0,
                     0
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -126,7 +147,9 @@
                     0,
                     -1
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -135,7 +158,9 @@
                     0,
                     -2
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -144,7 +169,9 @@
                     0,
                     2
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -153,7 +180,9 @@
                     0,
                     1
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -162,7 +191,9 @@
                     0,
                     0
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -171,7 +202,9 @@
                     0,
                     -1
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -180,7 +213,9 @@
                     0,
                     -2
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -189,7 +224,9 @@
                     0,
                     2
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -198,7 +235,9 @@
                     0,
                     1
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -207,7 +246,9 @@
                     0,
                     0
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -216,7 +257,9 @@
                     0,
                     -1
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -225,7 +268,9 @@
                     0,
                     -2
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -234,7 +279,9 @@
                     0,
                     2
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -243,7 +290,9 @@
                     0,
                     1
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -252,7 +301,9 @@
                     0,
                     0
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -261,7 +312,9 @@
                     0,
                     -1
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -270,7 +323,9 @@
                     0,
                     -2
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -279,7 +334,9 @@
                     0,
                     2
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -288,7 +345,9 @@
                     0,
                     1
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -297,7 +356,9 @@
                     0,
                     0
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -306,7 +367,9 @@
                     0,
                     -1
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -315,7 +378,9 @@
                     0,
                     -2
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -324,7 +389,9 @@
                     0,
                     2
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -333,7 +400,9 @@
                     0,
                     1
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -342,7 +411,9 @@
                     0,
                     0
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -351,7 +422,9 @@
                     0,
                     -1
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -360,7 +433,9 @@
                     0,
                     -2
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -369,7 +444,9 @@
                     0,
                     2
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -378,7 +455,9 @@
                     0,
                     1
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -387,7 +466,9 @@
                     0,
                     -1
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -396,7 +477,9 @@
                     0,
                     -2
                   ],
-                  "blocks": "minecraft:water"
+                  "blocks": [
+                    "minecraft:water"
+                  ]
                 }
               ]
             }

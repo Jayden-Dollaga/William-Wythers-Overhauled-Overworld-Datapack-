@@ -5,141 +5,159 @@
       "features": [
         {
           "feature": {
+            "type": "minecraft:simple_random_selector",
             "config": {
-              "tries": 16,
-              "xz_spread": 2,
-              "y_spread": 2,
-              "feature": {
-                "feature": {
-                  "config": {
-                    "to_place": {
-                      "type": "minecraft:weighted_state_provider",
-                      "entries": [
-                        {
-                          "weight": 1,
-                          "data": {
-                            "Name": "minecraft:brain_coral",
-                            "Properties": {
-                              "waterlogged": "true"
+              "features": [
+                {
+                  "feature": {
+                    "config": {
+                      "to_place": {
+                        "type": "minecraft:weighted_state_provider",
+                        "entries": [
+                          {
+                            "weight": 1,
+                            "data": {
+                              "Name": "minecraft:brain_coral",
+                              "Properties": {
+                                "waterlogged": "true"
+                              }
+                            }
+                          },
+                          {
+                            "weight": 1,
+                            "data": {
+                              "Name": "minecraft:bubble_coral",
+                              "Properties": {
+                                "waterlogged": "true"
+                              }
+                            }
+                          },
+                          {
+                            "weight": 1,
+                            "data": {
+                              "Name": "minecraft:fire_coral",
+                              "Properties": {
+                                "waterlogged": "true"
+                              }
+                            }
+                          },
+                          {
+                            "weight": 1,
+                            "data": {
+                              "Name": "minecraft:horn_coral",
+                              "Properties": {
+                                "waterlogged": "true"
+                              }
+                            }
+                          },
+                          {
+                            "weight": 1,
+                            "data": {
+                              "Name": "minecraft:tube_coral",
+                              "Properties": {
+                                "waterlogged": "true"
+                              }
+                            }
+                          },
+                          {
+                            "weight": 1,
+                            "data": {
+                              "Name": "minecraft:brain_coral_fan",
+                              "Properties": {
+                                "waterlogged": "true"
+                              }
+                            }
+                          },
+                          {
+                            "weight": 1,
+                            "data": {
+                              "Name": "minecraft:bubble_coral_fan",
+                              "Properties": {
+                                "waterlogged": "true"
+                              }
+                            }
+                          },
+                          {
+                            "weight": 1,
+                            "data": {
+                              "Name": "minecraft:fire_coral_fan",
+                              "Properties": {
+                                "waterlogged": "true"
+                              }
+                            }
+                          },
+                          {
+                            "weight": 1,
+                            "data": {
+                              "Name": "minecraft:horn_coral_fan",
+                              "Properties": {
+                                "waterlogged": "true"
+                              }
+                            }
+                          },
+                          {
+                            "weight": 1,
+                            "data": {
+                              "Name": "minecraft:tube_coral_fan",
+                              "Properties": {
+                                "waterlogged": "true"
+                              }
                             }
                           }
-                        },
-                        {
-                          "weight": 1,
-                          "data": {
-                            "Name": "minecraft:bubble_coral",
-                            "Properties": {
-                              "waterlogged": "true"
-                            }
-                          }
-                        },
-                        {
-                          "weight": 1,
-                          "data": {
-                            "Name": "minecraft:fire_coral",
-                            "Properties": {
-                              "waterlogged": "true"
-                            }
-                          }
-                        },
-                        {
-                          "weight": 1,
-                          "data": {
-                            "Name": "minecraft:horn_coral",
-                            "Properties": {
-                              "waterlogged": "true"
-                            }
-                          }
-                        },
-                        {
-                          "weight": 1,
-                          "data": {
-                            "Name": "minecraft:tube_coral",
-                            "Properties": {
-                              "waterlogged": "true"
-                            }
-                          }
-                        },
-                        {
-                          "weight": 1,
-                          "data": {
-                            "Name": "minecraft:brain_coral_fan",
-                            "Properties": {
-                              "waterlogged": "true"
-                            }
-                          }
-                        },
-                        {
-                          "weight": 1,
-                          "data": {
-                            "Name": "minecraft:bubble_coral_fan",
-                            "Properties": {
-                              "waterlogged": "true"
-                            }
-                          }
-                        },
-                        {
-                          "weight": 1,
-                          "data": {
-                            "Name": "minecraft:fire_coral_fan",
-                            "Properties": {
-                              "waterlogged": "true"
-                            }
-                          }
-                        },
-                        {
-                          "weight": 1,
-                          "data": {
-                            "Name": "minecraft:horn_coral_fan",
-                            "Properties": {
-                              "waterlogged": "true"
-                            }
-                          }
-                        },
-                        {
-                          "weight": 1,
-                          "data": {
-                            "Name": "minecraft:tube_coral_fan",
-                            "Properties": {
-                              "waterlogged": "true"
-                            }
-                          }
-                        }
-                      ]
-                    }
+                        ]
+                      }
+                    },
+                    "type": "minecraft:simple_block"
                   },
-                  "type": "minecraft:simple_block"
-                },
-                "placement": [
-                  {
-                    "type": "minecraft:block_predicate_filter",
-                    "predicate": {
-                      "type": "minecraft:all_of",
-                      "predicates": [
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "blocks": [
-                            "water"
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            0,
-                            -1,
-                            0
-                          ],
-                          "blocks": [
-                            "sand"
-                          ]
-                        }
-                      ]
+                  "placement": [
+                    {
+                      "type": "minecraft:count",
+                      "count": 16
+                    },
+                    {
+                      "type": "minecraft:random_offset",
+                      "xz_spread": {
+                        "type": "minecraft:trapezoid",
+                        "min": -2,
+                        "max": 2,
+                        "plateau": 0
+                      },
+                      "y_spread": {
+                        "type": "minecraft:trapezoid",
+                        "min": -2,
+                        "max": 2,
+                        "plateau": 0
+                      }
+                    },
+                    {
+                      "type": "minecraft:block_predicate_filter",
+                      "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                              "minecraft:water"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              -1,
+                              0
+                            ],
+                            "blocks": [
+                              "minecraft:sand"
+                            ]
+                          }
+                        ]
+                      }
                     }
-                  }
-                ]
-              }
-            },
-            "type": "minecraft:random_patch"
+                  ]
+                }
+              ]
+            }
           },
           "placement": []
         },
@@ -148,6 +166,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -158,7 +177,9 @@
               },
               "target": {
                 "type": "minecraft:matching_fluids",
-                "fluids": "#minecraft:water"
+                "fluids": [
+                  "minecraft:water"
+                ]
               },
               "radius": {
                 "type": "minecraft:biased_to_bottom",
@@ -175,6 +196,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -185,7 +207,9 @@
               },
               "target": {
                 "type": "minecraft:matching_fluids",
-                "fluids": "#minecraft:water"
+                "fluids": [
+                  "minecraft:water"
+                ]
               },
               "radius": {
                 "type": "minecraft:biased_to_bottom",
@@ -202,6 +226,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -212,7 +237,9 @@
               },
               "target": {
                 "type": "minecraft:matching_fluids",
-                "fluids": "#minecraft:water"
+                "fluids": [
+                  "minecraft:water"
+                ]
               },
               "radius": {
                 "type": "minecraft:biased_to_bottom",
@@ -229,6 +256,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -239,7 +267,9 @@
               },
               "target": {
                 "type": "minecraft:matching_fluids",
-                "fluids": "#minecraft:water"
+                "fluids": [
+                  "minecraft:water"
+                ]
               },
               "radius": {
                 "type": "minecraft:biased_to_bottom",
@@ -256,6 +286,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -266,7 +297,9 @@
               },
               "target": {
                 "type": "minecraft:matching_fluids",
-                "fluids": "#minecraft:water"
+                "fluids": [
+                  "minecraft:water"
+                ]
               },
               "radius": {
                 "type": "minecraft:biased_to_bottom",

@@ -3,21 +3,11 @@
     "type": "minecraft:tree",
     "config": {
       "ignore_vines": true,
-      "force_dirt": true,
       "minimum_size": {
         "type": "minecraft:two_layers_feature_size",
         "limit": 1,
         "lower_size": 0,
         "upper_size": 2
-      },
-      "dirt_provider": {
-        "type": "minecraft:simple_state_provider",
-        "state": {
-          "Name": "minecraft:spruce_log",
-          "Properties": {
-            "axis": "y"
-          }
-        }
       },
       "trunk_provider": {
         "type": "minecraft:simple_state_provider",
@@ -54,33 +44,63 @@
         {
           "type": "minecraft:alter_ground",
           "provider": {
-            "type": "minecraft:weighted_state_provider",
-            "entries": [
+            "type": "minecraft:rule_based_state_provider",
+            "rules": [
               {
-                "weight": 4,
-                "data": {
-                  "Name": "minecraft:grass_block",
-                  "Properties": {
-                    "snowy": "false"
-                  }
-                }
-              },
-              {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:coarse_dirt"
-                }
-              },
-              {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:rooted_dirt"
+                "if_true": {
+                  "type": "minecraft:matching_block_tag",
+                  "tag": "minecraft:beneath_tree_podzol_replaceable"
+                },
+                "then": {
+                  "type": "minecraft:weighted_state_provider",
+                  "entries": [
+                    {
+                      "weight": 4,
+                      "data": {
+                        "Name": "minecraft:grass_block",
+                        "Properties": {
+                          "snowy": "false"
+                        }
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:coarse_dirt"
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:rooted_dirt"
+                      }
+                    }
+                  ]
                 }
               }
             ]
           }
         }
-      ]
+      ],
+      "below_trunk_provider": {
+        "type": "minecraft:rule_based_state_provider",
+        "rules": [
+          {
+            "if_true": {
+              "type": "minecraft:true"
+            },
+            "then": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:spruce_log",
+                "Properties": {
+                  "axis": "y"
+                }
+              }
+            }
+          }
+        ]
+      }
     }
   },
   "placement": [
@@ -98,6 +118,43 @@
     {
       "type": "minecraft:heightmap",
       "heightmap": "OCEAN_FLOOR"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:not",
+        "predicate": {
+          "type": "minecraft:any_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -2,
+                0
+              ],
+              "blocks": [
+                "minecraft:air",
+                "minecraft:cave_air",
+                "minecraft:void_air"
+              ]
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -3,
+                0
+              ],
+              "blocks": [
+                "minecraft:air",
+                "minecraft:cave_air",
+                "minecraft:void_air"
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "type": "minecraft:block_predicate_filter",

@@ -2,10 +2,11 @@
   "feature": {
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "deepslate"
+            "Name": "minecraft:deepslate"
           }
         },
         "rules": []
@@ -19,11 +20,11 @@
       "target": {
         "type": "minecraft:matching_blocks",
         "blocks": [
-          "gravel",
+          "minecraft:gravel",
           "minecraft:dirt",
-          "stone",
-          "packed_ice",
-          "gravel"
+          "minecraft:stone",
+          "minecraft:packed_ice",
+          "minecraft:gravel"
         ]
       }
     },
@@ -33,7 +34,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 2
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 2
+        }
       }
     },
     {
@@ -41,7 +45,7 @@
       "predicate": {
         "type": "minecraft:matching_blocks",
         "blocks": [
-          "moss_block"
+          "minecraft:moss_block"
         ]
       }
     },

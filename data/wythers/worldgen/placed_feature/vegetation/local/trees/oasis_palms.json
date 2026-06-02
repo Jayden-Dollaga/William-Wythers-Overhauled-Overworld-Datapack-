@@ -10,19 +10,12 @@
               "type": "minecraft:tree",
               "config": {
                 "ignore_vines": true,
-                "force_dirt": false,
                 "minimum_size": {
                   "type": "minecraft:two_layers_feature_size",
                   "min_clipped_height": 10,
                   "limit": 1,
                   "lower_size": 0,
                   "upper_size": 2
-                },
-                "dirt_provider": {
-                  "type": "minecraft:simple_state_provider",
-                  "state": {
-                    "Name": "minecraft:dirt"
-                  }
                 },
                 "trunk_provider": {
                   "type": "minecraft:simple_state_provider",
@@ -60,7 +53,27 @@
                   "hanging_leaves_chance": 0.5,
                   "hanging_leaves_extension_chance": 1
                 },
-                "decorators": []
+                "decorators": [],
+                "below_trunk_provider": {
+                  "type": "minecraft:rule_based_state_provider",
+                  "rules": [
+                    {
+                      "if_true": {
+                        "type": "minecraft:not",
+                        "predicate": {
+                          "type": "minecraft:matching_block_tag",
+                          "tag": "minecraft:cannot_replace_below_tree_trunk"
+                        }
+                      },
+                      "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "minecraft:dirt"
+                        }
+                      }
+                    }
+                  ]
+                }
               }
             },
             "placement": []
@@ -72,19 +85,12 @@
           "type": "minecraft:tree",
           "config": {
             "ignore_vines": true,
-            "force_dirt": false,
             "minimum_size": {
               "type": "minecraft:two_layers_feature_size",
               "min_clipped_height": 10,
               "limit": 1,
               "lower_size": 0,
               "upper_size": 2
-            },
-            "dirt_provider": {
-              "type": "minecraft:simple_state_provider",
-              "state": {
-                "Name": "minecraft:dirt"
-              }
             },
             "trunk_provider": {
               "type": "minecraft:simple_state_provider",
@@ -122,7 +128,27 @@
               "hanging_leaves_chance": 0.5,
               "hanging_leaves_extension_chance": 1
             },
-            "decorators": []
+            "decorators": [],
+            "below_trunk_provider": {
+              "type": "minecraft:rule_based_state_provider",
+              "rules": [
+                {
+                  "if_true": {
+                    "type": "minecraft:not",
+                    "predicate": {
+                      "type": "minecraft:matching_block_tag",
+                      "tag": "minecraft:cannot_replace_below_tree_trunk"
+                    }
+                  },
+                  "then": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:dirt"
+                    }
+                  }
+                }
+              ]
+            }
           }
         },
         "placement": []
@@ -151,7 +177,44 @@
     },
     {
       "type": "minecraft:heightmap",
-      "heightmap": "MOTION_BLOCKING"
+      "heightmap": "OCEAN_FLOOR"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:not",
+        "predicate": {
+          "type": "minecraft:any_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -2,
+                0
+              ],
+              "blocks": [
+                "minecraft:air",
+                "minecraft:cave_air",
+                "minecraft:void_air"
+              ]
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -3,
+                0
+              ],
+              "blocks": [
+                "minecraft:air",
+                "minecraft:cave_air",
+                "minecraft:void_air"
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "type": "minecraft:block_predicate_filter",
@@ -171,7 +234,9 @@
               -1,
               0
             ],
-            "blocks": "minecraft:moss_block"
+            "blocks": [
+              "minecraft:moss_block"
+            ]
           }
         ]
       }

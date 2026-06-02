@@ -8,6 +8,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -18,7 +19,9 @@
               },
               "target": {
                 "type": "minecraft:matching_fluids",
-                "fluids": "#minecraft:water"
+                "fluids": [
+                  "minecraft:water"
+                ]
               },
               "radius": {
                 "type": "minecraft:biased_to_bottom",
@@ -35,6 +38,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -45,7 +49,9 @@
               },
               "target": {
                 "type": "minecraft:matching_fluids",
-                "fluids": "#minecraft:water"
+                "fluids": [
+                  "minecraft:water"
+                ]
               },
               "radius": {
                 "type": "minecraft:biased_to_bottom",
@@ -62,6 +68,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -72,7 +79,9 @@
               },
               "target": {
                 "type": "minecraft:matching_fluids",
-                "fluids": "#minecraft:water"
+                "fluids": [
+                  "minecraft:water"
+                ]
               },
               "radius": {
                 "type": "minecraft:biased_to_bottom",
@@ -89,6 +98,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -99,7 +109,9 @@
               },
               "target": {
                 "type": "minecraft:matching_fluids",
-                "fluids": "#minecraft:water"
+                "fluids": [
+                  "minecraft:water"
+                ]
               },
               "radius": {
                 "type": "minecraft:biased_to_bottom",
@@ -116,6 +128,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -126,7 +139,9 @@
               },
               "target": {
                 "type": "minecraft:matching_fluids",
-                "fluids": "#minecraft:water"
+                "fluids": [
+                  "minecraft:water"
+                ]
               },
               "radius": {
                 "type": "minecraft:biased_to_bottom",

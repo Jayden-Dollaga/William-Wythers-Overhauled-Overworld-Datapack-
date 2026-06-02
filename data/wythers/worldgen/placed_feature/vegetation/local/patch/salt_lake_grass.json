@@ -6,6 +6,7 @@
           "feature": {
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:weighted_state_provider",
                   "entries": [
@@ -33,7 +34,7 @@
                   {
                     "type": "minecraft:matching_blocks",
                     "blocks": [
-                      "air"
+                      "minecraft:air"
                     ]
                   },
                   {
@@ -54,7 +55,10 @@
             {
               "type": "minecraft:height_range",
               "height": {
-                "absolute": 63
+                "type": "minecraft:constant",
+                "value": {
+                  "absolute": 63
+                }
               }
             }
           ]
@@ -67,7 +71,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 62
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 62
+        }
       }
     },
     {

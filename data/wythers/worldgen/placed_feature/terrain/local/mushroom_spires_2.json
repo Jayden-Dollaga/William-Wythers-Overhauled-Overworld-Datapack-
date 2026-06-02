@@ -24,7 +24,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 0
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 0
+        }
       }
     },
     {
@@ -55,14 +58,14 @@
               0
             ],
             "blocks": [
-              "tuff",
+              "minecraft:tuff",
               "minecraft:grass_block"
             ]
           },
           {
             "type": "minecraft:matching_blocks",
             "blocks": [
-              "air"
+              "minecraft:air"
             ]
           }
         ]

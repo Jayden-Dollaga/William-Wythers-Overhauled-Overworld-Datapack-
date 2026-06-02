@@ -2,6 +2,7 @@
   "feature": {
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -22,7 +23,9 @@
         "predicates": [
           {
             "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:air"
+            "blocks": [
+              "minecraft:air"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -31,7 +34,9 @@
               1,
               0
             ],
-            "blocks": "minecraft:azalea_leaves"
+            "blocks": [
+              "minecraft:azalea_leaves"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -40,7 +45,9 @@
               4,
               0
             ],
-            "blocks": "minecraft:air"
+            "blocks": [
+              "minecraft:air"
+            ]
           },
           {
             "type": "minecraft:any_of",
@@ -55,7 +62,9 @@
                       1,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -64,7 +73,9 @@
                       1,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -73,7 +84,9 @@
                       1,
                       1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -82,7 +95,9 @@
                       1,
                       -1
                     ],
-                    "blocks": "azalea_leaves"
+                    "blocks": [
+                      "minecraft:azalea_leaves"
+                    ]
                   }
                 ]
               },
@@ -96,7 +111,9 @@
                       1,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -105,7 +122,9 @@
                       1,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -114,7 +133,9 @@
                       1,
                       1
                     ],
-                    "blocks": "azalea_leaves"
+                    "blocks": [
+                      "minecraft:azalea_leaves"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -123,7 +144,9 @@
                       1,
                       -1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   }
                 ]
               },
@@ -137,7 +160,9 @@
                       1,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -146,7 +171,9 @@
                       1,
                       0
                     ],
-                    "blocks": "azalea_leaves"
+                    "blocks": [
+                      "minecraft:azalea_leaves"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -155,7 +182,9 @@
                       1,
                       1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -164,7 +193,9 @@
                       1,
                       -1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   }
                 ]
               },
@@ -178,7 +209,9 @@
                       1,
                       0
                     ],
-                    "blocks": "azalea_leaves"
+                    "blocks": [
+                      "minecraft:azalea_leaves"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -187,7 +220,9 @@
                       1,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -196,7 +231,9 @@
                       1,
                       1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -205,7 +242,9 @@
                       1,
                       -1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   }
                 ]
               },
@@ -219,7 +258,9 @@
                       2,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -228,7 +269,9 @@
                       2,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -237,7 +280,9 @@
                       2,
                       1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -246,7 +291,9 @@
                       2,
                       -1
                     ],
-                    "blocks": "azalea_leaves"
+                    "blocks": [
+                      "minecraft:azalea_leaves"
+                    ]
                   }
                 ]
               },
@@ -260,7 +307,9 @@
                       2,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -269,7 +318,9 @@
                       2,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -278,7 +329,9 @@
                       2,
                       1
                     ],
-                    "blocks": "azalea_leaves"
+                    "blocks": [
+                      "minecraft:azalea_leaves"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -287,7 +340,9 @@
                       2,
                       -1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   }
                 ]
               },
@@ -301,7 +356,9 @@
                       2,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -310,7 +367,9 @@
                       2,
                       0
                     ],
-                    "blocks": "azalea_leaves"
+                    "blocks": [
+                      "minecraft:azalea_leaves"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -319,7 +378,9 @@
                       2,
                       1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -328,7 +389,9 @@
                       2,
                       -1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   }
                 ]
               },
@@ -342,7 +405,9 @@
                       2,
                       0
                     ],
-                    "blocks": "azalea_leaves"
+                    "blocks": [
+                      "minecraft:azalea_leaves"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -351,7 +416,9 @@
                       2,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -360,7 +427,9 @@
                       2,
                       1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -369,7 +438,9 @@
                       2,
                       -1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   }
                 ]
               },
@@ -383,7 +454,9 @@
                       3,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -392,7 +465,9 @@
                       3,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -401,7 +476,9 @@
                       3,
                       1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -410,7 +487,9 @@
                       3,
                       -1
                     ],
-                    "blocks": "azalea_leaves"
+                    "blocks": [
+                      "minecraft:azalea_leaves"
+                    ]
                   }
                 ]
               },
@@ -424,7 +503,9 @@
                       3,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -433,7 +514,9 @@
                       3,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -442,7 +525,9 @@
                       3,
                       1
                     ],
-                    "blocks": "azalea_leaves"
+                    "blocks": [
+                      "minecraft:azalea_leaves"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -451,7 +536,9 @@
                       3,
                       -1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   }
                 ]
               },
@@ -465,7 +552,9 @@
                       3,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -474,7 +563,9 @@
                       3,
                       0
                     ],
-                    "blocks": "azalea_leaves"
+                    "blocks": [
+                      "minecraft:azalea_leaves"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -483,7 +574,9 @@
                       3,
                       1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -492,7 +585,9 @@
                       3,
                       -1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   }
                 ]
               },
@@ -506,7 +601,9 @@
                       3,
                       0
                     ],
-                    "blocks": "azalea_leaves"
+                    "blocks": [
+                      "minecraft:azalea_leaves"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -515,7 +612,9 @@
                       3,
                       0
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -524,7 +623,9 @@
                       3,
                       1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -533,7 +634,9 @@
                       3,
                       -1
                     ],
-                    "blocks": "air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   }
                 ]
               }

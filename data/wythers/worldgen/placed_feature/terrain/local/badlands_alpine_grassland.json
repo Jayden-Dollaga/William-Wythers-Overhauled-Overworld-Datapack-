@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -85,7 +86,7 @@
                     0
                   ],
                   "blocks": [
-                    "air"
+                    "minecraft:air"
                   ]
                 },
                 {
@@ -96,7 +97,7 @@
                     0
                   ],
                   "blocks": [
-                    "air"
+                    "minecraft:air"
                   ]
                 },
                 {
@@ -107,7 +108,7 @@
                     1
                   ],
                   "blocks": [
-                    "air"
+                    "minecraft:air"
                   ]
                 },
                 {
@@ -118,7 +119,7 @@
                     -1
                   ],
                   "blocks": [
-                    "air"
+                    "minecraft:air"
                   ]
                 }
               ]
@@ -132,7 +133,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 2
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 2
+        }
       }
     },
     {
@@ -151,7 +155,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 0
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 0
+        }
       }
     },
     {

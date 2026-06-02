@@ -16,18 +16,11 @@
                       "type": "minecraft:tree",
                       "config": {
                         "ignore_vines": true,
-                        "force_dirt": true,
                         "minimum_size": {
                           "type": "minecraft:two_layers_feature_size",
                           "limit": 1,
                           "lower_size": 1,
                           "upper_size": 1
-                        },
-                        "dirt_provider": {
-                          "type": "minecraft:simple_state_provider",
-                          "state": {
-                            "Name": "minecraft:dirt"
-                          }
                         },
                         "trunk_provider": {
                           "type": "minecraft:simple_state_provider",
@@ -61,7 +54,23 @@
                           "offset": 1,
                           "height": 6
                         },
-                        "decorators": []
+                        "decorators": [],
+                        "below_trunk_provider": {
+                          "type": "minecraft:rule_based_state_provider",
+                          "rules": [
+                            {
+                              "if_true": {
+                                "type": "minecraft:true"
+                              },
+                              "then": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                  "Name": "minecraft:dirt"
+                                }
+                              }
+                            }
+                          ]
+                        }
                       }
                     },
                     "placement": []
@@ -73,18 +82,11 @@
                   "type": "minecraft:tree",
                   "config": {
                     "ignore_vines": true,
-                    "force_dirt": true,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
                       "limit": 1,
                       "lower_size": 1,
                       "upper_size": 1
-                    },
-                    "dirt_provider": {
-                      "type": "minecraft:simple_state_provider",
-                      "state": {
-                        "Name": "minecraft:dirt"
-                      }
                     },
                     "trunk_provider": {
                       "type": "minecraft:simple_state_provider",
@@ -118,7 +120,23 @@
                       "offset": 5,
                       "height": 6
                     },
-                    "decorators": []
+                    "decorators": [],
+                    "below_trunk_provider": {
+                      "type": "minecraft:rule_based_state_provider",
+                      "rules": [
+                        {
+                          "if_true": {
+                            "type": "minecraft:true"
+                          },
+                          "then": {
+                            "type": "minecraft:simple_state_provider",
+                            "state": {
+                              "Name": "minecraft:dirt"
+                            }
+                          }
+                        }
+                      ]
+                    }
                   }
                 },
                 "placement": []
@@ -162,18 +180,11 @@
                       "type": "minecraft:tree",
                       "config": {
                         "ignore_vines": true,
-                        "force_dirt": true,
                         "minimum_size": {
                           "type": "minecraft:two_layers_feature_size",
                           "limit": 1,
                           "lower_size": 1,
                           "upper_size": 1
-                        },
-                        "dirt_provider": {
-                          "type": "minecraft:simple_state_provider",
-                          "state": {
-                            "Name": "minecraft:dirt"
-                          }
                         },
                         "trunk_provider": {
                           "type": "minecraft:simple_state_provider",
@@ -207,7 +218,23 @@
                           "offset": 1,
                           "height": 6
                         },
-                        "decorators": []
+                        "decorators": [],
+                        "below_trunk_provider": {
+                          "type": "minecraft:rule_based_state_provider",
+                          "rules": [
+                            {
+                              "if_true": {
+                                "type": "minecraft:true"
+                              },
+                              "then": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                  "Name": "minecraft:dirt"
+                                }
+                              }
+                            }
+                          ]
+                        }
                       }
                     },
                     "placement": []
@@ -219,18 +246,11 @@
                   "type": "minecraft:tree",
                   "config": {
                     "ignore_vines": true,
-                    "force_dirt": true,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
                       "limit": 1,
                       "lower_size": 1,
                       "upper_size": 1
-                    },
-                    "dirt_provider": {
-                      "type": "minecraft:simple_state_provider",
-                      "state": {
-                        "Name": "minecraft:dirt"
-                      }
                     },
                     "trunk_provider": {
                       "type": "minecraft:simple_state_provider",
@@ -264,7 +284,23 @@
                       "offset": 6,
                       "height": 7
                     },
-                    "decorators": []
+                    "decorators": [],
+                    "below_trunk_provider": {
+                      "type": "minecraft:rule_based_state_provider",
+                      "rules": [
+                        {
+                          "if_true": {
+                            "type": "minecraft:true"
+                          },
+                          "then": {
+                            "type": "minecraft:simple_state_provider",
+                            "state": {
+                              "Name": "minecraft:dirt"
+                            }
+                          }
+                        }
+                      ]
+                    }
                   }
                 },
                 "placement": []
@@ -308,18 +344,11 @@
                       "type": "minecraft:tree",
                       "config": {
                         "ignore_vines": true,
-                        "force_dirt": true,
                         "minimum_size": {
                           "type": "minecraft:two_layers_feature_size",
                           "limit": 1,
                           "lower_size": 1,
                           "upper_size": 1
-                        },
-                        "dirt_provider": {
-                          "type": "minecraft:simple_state_provider",
-                          "state": {
-                            "Name": "minecraft:dirt"
-                          }
                         },
                         "trunk_provider": {
                           "type": "minecraft:simple_state_provider",
@@ -353,7 +382,23 @@
                           "offset": 1,
                           "height": 8
                         },
-                        "decorators": []
+                        "decorators": [],
+                        "below_trunk_provider": {
+                          "type": "minecraft:rule_based_state_provider",
+                          "rules": [
+                            {
+                              "if_true": {
+                                "type": "minecraft:true"
+                              },
+                              "then": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                  "Name": "minecraft:dirt"
+                                }
+                              }
+                            }
+                          ]
+                        }
                       }
                     },
                     "placement": []
@@ -366,18 +411,11 @@
                       "type": "minecraft:tree",
                       "config": {
                         "ignore_vines": true,
-                        "force_dirt": true,
                         "minimum_size": {
                           "type": "minecraft:two_layers_feature_size",
                           "limit": 1,
                           "lower_size": 1,
                           "upper_size": 1
-                        },
-                        "dirt_provider": {
-                          "type": "minecraft:simple_state_provider",
-                          "state": {
-                            "Name": "minecraft:dirt"
-                          }
                         },
                         "trunk_provider": {
                           "type": "minecraft:simple_state_provider",
@@ -412,7 +450,23 @@
                           "foliage_height": 2,
                           "leaf_placement_attempts": 100
                         },
-                        "decorators": []
+                        "decorators": [],
+                        "below_trunk_provider": {
+                          "type": "minecraft:rule_based_state_provider",
+                          "rules": [
+                            {
+                              "if_true": {
+                                "type": "minecraft:true"
+                              },
+                              "then": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                  "Name": "minecraft:dirt"
+                                }
+                              }
+                            }
+                          ]
+                        }
                       }
                     },
                     "placement": []
@@ -424,18 +478,11 @@
                   "type": "minecraft:tree",
                   "config": {
                     "ignore_vines": true,
-                    "force_dirt": true,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
                       "limit": 1,
                       "lower_size": 1,
                       "upper_size": 1
-                    },
-                    "dirt_provider": {
-                      "type": "minecraft:simple_state_provider",
-                      "state": {
-                        "Name": "minecraft:dirt"
-                      }
                     },
                     "trunk_provider": {
                       "type": "minecraft:simple_state_provider",
@@ -469,7 +516,23 @@
                       "offset": 6,
                       "height": 7
                     },
-                    "decorators": []
+                    "decorators": [],
+                    "below_trunk_provider": {
+                      "type": "minecraft:rule_based_state_provider",
+                      "rules": [
+                        {
+                          "if_true": {
+                            "type": "minecraft:true"
+                          },
+                          "then": {
+                            "type": "minecraft:simple_state_provider",
+                            "state": {
+                              "Name": "minecraft:dirt"
+                            }
+                          }
+                        }
+                      ]
+                    }
                   }
                 },
                 "placement": []
@@ -513,18 +576,11 @@
                       "type": "minecraft:tree",
                       "config": {
                         "ignore_vines": true,
-                        "force_dirt": true,
                         "minimum_size": {
                           "type": "minecraft:two_layers_feature_size",
                           "limit": 1,
                           "lower_size": 1,
                           "upper_size": 1
-                        },
-                        "dirt_provider": {
-                          "type": "minecraft:simple_state_provider",
-                          "state": {
-                            "Name": "minecraft:dirt"
-                          }
                         },
                         "trunk_provider": {
                           "type": "minecraft:simple_state_provider",
@@ -558,7 +614,23 @@
                           "offset": 1,
                           "height": 9
                         },
-                        "decorators": []
+                        "decorators": [],
+                        "below_trunk_provider": {
+                          "type": "minecraft:rule_based_state_provider",
+                          "rules": [
+                            {
+                              "if_true": {
+                                "type": "minecraft:true"
+                              },
+                              "then": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                  "Name": "minecraft:dirt"
+                                }
+                              }
+                            }
+                          ]
+                        }
                       }
                     },
                     "placement": []
@@ -571,18 +643,11 @@
                       "type": "minecraft:tree",
                       "config": {
                         "ignore_vines": true,
-                        "force_dirt": true,
                         "minimum_size": {
                           "type": "minecraft:two_layers_feature_size",
                           "limit": 1,
                           "lower_size": 1,
                           "upper_size": 1
-                        },
-                        "dirt_provider": {
-                          "type": "minecraft:simple_state_provider",
-                          "state": {
-                            "Name": "minecraft:dirt"
-                          }
                         },
                         "trunk_provider": {
                           "type": "minecraft:simple_state_provider",
@@ -617,7 +682,23 @@
                           "foliage_height": 2,
                           "leaf_placement_attempts": 100
                         },
-                        "decorators": []
+                        "decorators": [],
+                        "below_trunk_provider": {
+                          "type": "minecraft:rule_based_state_provider",
+                          "rules": [
+                            {
+                              "if_true": {
+                                "type": "minecraft:true"
+                              },
+                              "then": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                  "Name": "minecraft:dirt"
+                                }
+                              }
+                            }
+                          ]
+                        }
                       }
                     },
                     "placement": []
@@ -629,18 +710,11 @@
                   "type": "minecraft:tree",
                   "config": {
                     "ignore_vines": true,
-                    "force_dirt": true,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
                       "limit": 1,
                       "lower_size": 1,
                       "upper_size": 1
-                    },
-                    "dirt_provider": {
-                      "type": "minecraft:simple_state_provider",
-                      "state": {
-                        "Name": "minecraft:dirt"
-                      }
                     },
                     "trunk_provider": {
                       "type": "minecraft:simple_state_provider",
@@ -674,7 +748,23 @@
                       "offset": 6,
                       "height": 7
                     },
-                    "decorators": []
+                    "decorators": [],
+                    "below_trunk_provider": {
+                      "type": "minecraft:rule_based_state_provider",
+                      "rules": [
+                        {
+                          "if_true": {
+                            "type": "minecraft:true"
+                          },
+                          "then": {
+                            "type": "minecraft:simple_state_provider",
+                            "state": {
+                              "Name": "minecraft:dirt"
+                            }
+                          }
+                        }
+                      ]
+                    }
                   }
                 },
                 "placement": []
@@ -717,18 +807,11 @@
                   "type": "minecraft:tree",
                   "config": {
                     "ignore_vines": true,
-                    "force_dirt": true,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
                       "limit": 1,
                       "lower_size": 1,
                       "upper_size": 1
-                    },
-                    "dirt_provider": {
-                      "type": "minecraft:simple_state_provider",
-                      "state": {
-                        "Name": "minecraft:dirt"
-                      }
                     },
                     "trunk_provider": {
                       "type": "minecraft:simple_state_provider",
@@ -762,7 +845,23 @@
                       "offset": 1,
                       "height": 7
                     },
-                    "decorators": []
+                    "decorators": [],
+                    "below_trunk_provider": {
+                      "type": "minecraft:rule_based_state_provider",
+                      "rules": [
+                        {
+                          "if_true": {
+                            "type": "minecraft:true"
+                          },
+                          "then": {
+                            "type": "minecraft:simple_state_provider",
+                            "state": {
+                              "Name": "minecraft:dirt"
+                            }
+                          }
+                        }
+                      ]
+                    }
                   }
                 },
                 "placement": []
@@ -774,18 +873,11 @@
               "type": "minecraft:tree",
               "config": {
                 "ignore_vines": true,
-                "force_dirt": true,
                 "minimum_size": {
                   "type": "minecraft:two_layers_feature_size",
                   "limit": 1,
                   "lower_size": 1,
                   "upper_size": 1
-                },
-                "dirt_provider": {
-                  "type": "minecraft:simple_state_provider",
-                  "state": {
-                    "Name": "minecraft:dirt"
-                  }
                 },
                 "trunk_provider": {
                   "type": "minecraft:simple_state_provider",
@@ -819,7 +911,23 @@
                   "offset": 6,
                   "height": 7
                 },
-                "decorators": []
+                "decorators": [],
+                "below_trunk_provider": {
+                  "type": "minecraft:rule_based_state_provider",
+                  "rules": [
+                    {
+                      "if_true": {
+                        "type": "minecraft:true"
+                      },
+                      "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "minecraft:dirt"
+                        }
+                      }
+                    }
+                  ]
+                }
               }
             },
             "placement": []

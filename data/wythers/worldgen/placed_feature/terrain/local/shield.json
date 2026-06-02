@@ -2,10 +2,11 @@
   "feature": {
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "stone"
+            "Name": "minecraft:stone"
           }
         },
         "rules": []
@@ -64,8 +65,8 @@
           {
             "type": "minecraft:matching_blocks",
             "blocks": [
-              "air",
-              "dirt",
+              "minecraft:air",
+              "minecraft:dirt",
               "minecraft:grass_block"
             ]
           }

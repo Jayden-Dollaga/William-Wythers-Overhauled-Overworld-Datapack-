@@ -5,14 +5,14 @@
         {
           "chance": 0.2,
           "feature": {
-            "feature": "minecraft:patch_bush",
+            "feature": "minecraft:bush",
             "placement": []
           }
         },
         {
           "chance": 0.1,
           "feature": {
-            "feature": "minecraft:patch_firefly_bush",
+            "feature": "minecraft:firefly_bush",
             "placement": []
           }
         }
@@ -28,7 +28,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {

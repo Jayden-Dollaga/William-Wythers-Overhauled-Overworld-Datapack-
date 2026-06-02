@@ -4,7 +4,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -85,7 +88,7 @@
           0
         ],
         "blocks": [
-          "water"
+          "minecraft:water"
         ]
       }
     },
@@ -101,7 +104,7 @@
           0
         ],
         "blocks": [
-          "water"
+          "minecraft:water"
         ]
       }
     },

@@ -3,25 +3,26 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:weighted_state_provider",
           "entries": [
             {
               "weight": 1,
               "data": {
-                "Name": "packed_mud"
+                "Name": "minecraft:packed_mud"
               }
             },
             {
               "weight": 1,
               "data": {
-                "Name": "rooted_dirt"
+                "Name": "minecraft:rooted_dirt"
               }
             },
             {
               "weight": 1,
               "data": {
-                "Name": "coarse_dirt"
+                "Name": "minecraft:coarse_dirt"
               }
             }
           ]
@@ -40,7 +41,7 @@
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "rooted_dirt"
+                "Name": "minecraft:rooted_dirt"
               }
             }
           }
@@ -102,7 +103,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {

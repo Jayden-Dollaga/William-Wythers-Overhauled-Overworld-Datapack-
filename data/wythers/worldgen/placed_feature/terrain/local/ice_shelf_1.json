@@ -2,10 +2,11 @@
   "feature": {
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "packed_ice"
+            "Name": "minecraft:packed_ice"
           }
         },
         "rules": []
@@ -34,17 +35,20 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-          "type": "minecraft:matching_blocks",
-          "blocks": [
-            "minecraft:blue_ice"
-          ]
-        }
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:blue_ice"
+        ]
+      }
     },
     {
       "type": "minecraft:block_predicate_filter",
@@ -73,7 +77,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 67
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 67
+        }
       }
     },
     {

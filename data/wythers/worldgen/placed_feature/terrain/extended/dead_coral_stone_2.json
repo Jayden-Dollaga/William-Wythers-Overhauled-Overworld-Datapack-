@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:weighted_state_provider",
           "entries": [
@@ -42,7 +43,9 @@
       },
       "target": {
         "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:stone"
+        "blocks": [
+          "minecraft:stone"
+        ]
       },
       "radius": 8,
       "half_height": 4

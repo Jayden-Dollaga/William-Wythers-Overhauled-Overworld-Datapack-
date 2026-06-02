@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -19,13 +20,13 @@
                 0
               ],
               "blocks": [
-                "oak_wood"
+                "minecraft:oak_wood"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "oak_wood"
+                "Name": "minecraft:oak_wood"
               }
             }
           },
@@ -38,13 +39,13 @@
                 0
               ],
               "blocks": [
-                "oak_log"
+                "minecraft:oak_log"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "oak_log"
+                "Name": "minecraft:oak_log"
               }
             }
           },
@@ -57,13 +58,13 @@
                 0
               ],
               "blocks": [
-                "dark_oak_wood"
+                "minecraft:dark_oak_wood"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "dark_oak_wood"
+                "Name": "minecraft:dark_oak_wood"
               }
             }
           },
@@ -76,13 +77,13 @@
                 0
               ],
               "blocks": [
-                "dark_oak_log"
+                "minecraft:dark_oak_log"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "dark_oak_log"
+                "Name": "minecraft:dark_oak_log"
               }
             }
           },
@@ -95,13 +96,13 @@
                 0
               ],
               "blocks": [
-                "pale_oak_wood"
+                "minecraft:pale_oak_wood"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "pale_oak_wood"
+                "Name": "minecraft:pale_oak_wood"
               }
             }
           },
@@ -114,13 +115,13 @@
                 0
               ],
               "blocks": [
-                "pale_oak_log"
+                "minecraft:pale_oak_log"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "pale_oak_log"
+                "Name": "minecraft:pale_oak_log"
               }
             }
           },
@@ -133,13 +134,13 @@
                 0
               ],
               "blocks": [
-                "birch_wood"
+                "minecraft:birch_wood"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "birch_wood"
+                "Name": "minecraft:birch_wood"
               }
             }
           },
@@ -152,13 +153,13 @@
                 0
               ],
               "blocks": [
-                "birch_log"
+                "minecraft:birch_log"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "birch_log"
+                "Name": "minecraft:birch_log"
               }
             }
           },
@@ -171,13 +172,13 @@
                 0
               ],
               "blocks": [
-                "spruce_wood"
+                "minecraft:spruce_wood"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "spruce_wood"
+                "Name": "minecraft:spruce_wood"
               }
             }
           },
@@ -190,13 +191,13 @@
                 0
               ],
               "blocks": [
-                "spruce_log"
+                "minecraft:spruce_log"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "spruce_log"
+                "Name": "minecraft:spruce_log"
               }
             }
           },
@@ -209,13 +210,13 @@
                 0
               ],
               "blocks": [
-                "acacia_wood"
+                "minecraft:acacia_wood"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "acacia_wood"
+                "Name": "minecraft:acacia_wood"
               }
             }
           },
@@ -228,13 +229,13 @@
                 0
               ],
               "blocks": [
-                "acacia_log"
+                "minecraft:acacia_log"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "acacia_log"
+                "Name": "minecraft:acacia_log"
               }
             }
           },
@@ -247,13 +248,13 @@
                 0
               ],
               "blocks": [
-                "jungle_wood"
+                "minecraft:jungle_wood"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "jungle_wood"
+                "Name": "minecraft:jungle_wood"
               }
             }
           },
@@ -266,13 +267,13 @@
                 0
               ],
               "blocks": [
-                "jungle_log"
+                "minecraft:jungle_log"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "jungle_log"
+                "Name": "minecraft:jungle_log"
               }
             }
           },
@@ -285,13 +286,13 @@
                 0
               ],
               "blocks": [
-                "mangrove_wood"
+                "minecraft:mangrove_wood"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "mangrove_wood"
+                "Name": "minecraft:mangrove_wood"
               }
             }
           },
@@ -304,13 +305,13 @@
                 0
               ],
               "blocks": [
-                "mangrove_log"
+                "minecraft:mangrove_log"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "mangrove_log"
+                "Name": "minecraft:mangrove_log"
               }
             }
           },
@@ -323,13 +324,13 @@
                 0
               ],
               "blocks": [
-                "cherry_wood"
+                "minecraft:cherry_wood"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "cherry_wood"
+                "Name": "minecraft:cherry_wood"
               }
             }
           },
@@ -342,13 +343,13 @@
                 0
               ],
               "blocks": [
-                "cherry_log"
+                "minecraft:cherry_log"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "cherry_log"
+                "Name": "minecraft:cherry_log"
               }
             }
           },
@@ -361,13 +362,13 @@
                 0
               ],
               "blocks": [
-                "mangrove_roots"
+                "minecraft:mangrove_roots"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "mangrove_roots"
+                "Name": "minecraft:mangrove_roots"
               }
             }
           }
@@ -489,7 +490,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 65
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 65
+        }
       }
     },
     {

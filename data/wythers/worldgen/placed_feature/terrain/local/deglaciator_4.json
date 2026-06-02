@@ -2,10 +2,11 @@
   "feature": {
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "air"
+            "Name": "minecraft:air"
           }
         },
         "rules": []
@@ -15,10 +16,10 @@
       "target": {
         "type": "minecraft:matching_blocks",
         "blocks": [
-          "packed_ice",
-          "blue_ice",
-          "snow_block",
-          "water"
+          "minecraft:packed_ice",
+          "minecraft:blue_ice",
+          "minecraft:snow_block",
+          "minecraft:water"
         ]
       }
     },
@@ -28,7 +29,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -37,7 +41,9 @@
         "type": "minecraft:not",
         "predicate": {
           "type": "minecraft:matching_blocks",
-          "blocks": "minecraft:blue_ice"
+          "blocks": [
+            "minecraft:blue_ice"
+          ]
         }
       }
     },
@@ -52,7 +58,9 @@
             2,
             0
           ],
-          "blocks": "minecraft:moss_block"
+          "blocks": [
+            "minecraft:moss_block"
+          ]
         }
       }
     },
@@ -66,7 +74,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 91
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 91
+        }
       }
     },
     {

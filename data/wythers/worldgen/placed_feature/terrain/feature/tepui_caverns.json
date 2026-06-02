@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -257,7 +258,9 @@
                   1,
                   0
                 ],
-                "blocks": "minecraft:cave_air"
+                "blocks": [
+                  "minecraft:cave_air"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -266,7 +269,9 @@
                   0,
                   0
                 ],
-                "blocks": "minecraft:cave_air"
+                "blocks": [
+                  "minecraft:cave_air"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -275,7 +280,9 @@
                   0,
                   0
                 ],
-                "blocks": "minecraft:cave_air"
+                "blocks": [
+                  "minecraft:cave_air"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -284,7 +291,9 @@
                   0,
                   1
                 ],
-                "blocks": "minecraft:cave_air"
+                "blocks": [
+                  "minecraft:cave_air"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -293,7 +302,9 @@
                   0,
                   -1
                 ],
-                "blocks": "minecraft:cave_air"
+                "blocks": [
+                  "minecraft:cave_air"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -318,7 +329,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {

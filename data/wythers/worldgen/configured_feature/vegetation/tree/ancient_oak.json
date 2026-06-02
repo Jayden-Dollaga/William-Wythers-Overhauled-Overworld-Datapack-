@@ -14,17 +14,10 @@
                     "type": "minecraft:tree",
                     "config": {
                       "ignore_vines": true,
-                      "force_dirt": false,
                       "minimum_size": {
                         "type": "minecraft:two_layers_feature_size",
                         "limit": 1,
                         "upper_size": 2
-                      },
-                      "dirt_provider": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                          "Name": "minecraft:dirt"
-                        }
                       },
                       "trunk_provider": {
                         "type": "minecraft:simple_state_provider",
@@ -62,13 +55,24 @@
                         {
                           "type": "minecraft:alter_ground",
                           "provider": {
-                            "type": "minecraft:simple_state_provider",
-                            "state": {
-                              "Name": "minecraft:podzol",
-                              "Properties": {
-                                "snowy": "false"
+                            "type": "minecraft:rule_based_state_provider",
+                            "rules": [
+                              {
+                                "if_true": {
+                                  "type": "minecraft:matching_block_tag",
+                                  "tag": "minecraft:beneath_tree_podzol_replaceable"
+                                },
+                                "then": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:podzol",
+                                    "Properties": {
+                                      "snowy": "false"
+                                    }
+                                  }
+                                }
                               }
-                            }
+                            ]
                           }
                         },
                         {
@@ -373,7 +377,27 @@
                           "radius": 4,
                           "tries": 250
                         }
-                      ]
+                      ],
+                      "below_trunk_provider": {
+                        "type": "minecraft:rule_based_state_provider",
+                        "rules": [
+                          {
+                            "if_true": {
+                              "type": "minecraft:not",
+                              "predicate": {
+                                "type": "minecraft:matching_block_tag",
+                                "tag": "minecraft:cannot_replace_below_tree_trunk"
+                              }
+                            },
+                            "then": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:dirt"
+                              }
+                            }
+                          }
+                        ]
+                      }
                     }
                   },
                   "placement": []
@@ -386,18 +410,11 @@
                     "type": "minecraft:tree",
                     "config": {
                       "ignore_vines": true,
-                      "force_dirt": false,
                       "minimum_size": {
                         "type": "minecraft:two_layers_feature_size",
                         "limit": 1,
                         "lower_size": 0,
                         "upper_size": 2
-                      },
-                      "dirt_provider": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                          "Name": "minecraft:dirt"
-                        }
                       },
                       "trunk_provider": {
                         "type": "minecraft:simple_state_provider",
@@ -462,13 +479,24 @@
                         {
                           "type": "minecraft:alter_ground",
                           "provider": {
-                            "type": "minecraft:simple_state_provider",
-                            "state": {
-                              "Name": "minecraft:podzol",
-                              "Properties": {
-                                "snowy": "false"
+                            "type": "minecraft:rule_based_state_provider",
+                            "rules": [
+                              {
+                                "if_true": {
+                                  "type": "minecraft:matching_block_tag",
+                                  "tag": "minecraft:beneath_tree_podzol_replaceable"
+                                },
+                                "then": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:podzol",
+                                    "Properties": {
+                                      "snowy": "false"
+                                    }
+                                  }
+                                }
                               }
-                            }
+                            ]
                           }
                         },
                         {
@@ -773,7 +801,27 @@
                           "radius": 4,
                           "tries": 250
                         }
-                      ]
+                      ],
+                      "below_trunk_provider": {
+                        "type": "minecraft:rule_based_state_provider",
+                        "rules": [
+                          {
+                            "if_true": {
+                              "type": "minecraft:not",
+                              "predicate": {
+                                "type": "minecraft:matching_block_tag",
+                                "tag": "minecraft:cannot_replace_below_tree_trunk"
+                              }
+                            },
+                            "then": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:dirt"
+                              }
+                            }
+                          }
+                        ]
+                      }
                     }
                   },
                   "placement": []
@@ -786,18 +834,11 @@
                     "type": "minecraft:tree",
                     "config": {
                       "ignore_vines": true,
-                      "force_dirt": false,
                       "minimum_size": {
                         "type": "minecraft:two_layers_feature_size",
                         "limit": 1,
                         "lower_size": 0,
                         "upper_size": 2
-                      },
-                      "dirt_provider": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                          "Name": "minecraft:dirt"
-                        }
                       },
                       "trunk_provider": {
                         "type": "minecraft:simple_state_provider",
@@ -862,13 +903,24 @@
                         {
                           "type": "minecraft:alter_ground",
                           "provider": {
-                            "type": "minecraft:simple_state_provider",
-                            "state": {
-                              "Name": "minecraft:podzol",
-                              "Properties": {
-                                "snowy": "false"
+                            "type": "minecraft:rule_based_state_provider",
+                            "rules": [
+                              {
+                                "if_true": {
+                                  "type": "minecraft:matching_block_tag",
+                                  "tag": "minecraft:beneath_tree_podzol_replaceable"
+                                },
+                                "then": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:podzol",
+                                    "Properties": {
+                                      "snowy": "false"
+                                    }
+                                  }
+                                }
                               }
-                            }
+                            ]
                           }
                         },
                         {
@@ -1173,7 +1225,27 @@
                           "radius": 4,
                           "tries": 250
                         }
-                      ]
+                      ],
+                      "below_trunk_provider": {
+                        "type": "minecraft:rule_based_state_provider",
+                        "rules": [
+                          {
+                            "if_true": {
+                              "type": "minecraft:not",
+                              "predicate": {
+                                "type": "minecraft:matching_block_tag",
+                                "tag": "minecraft:cannot_replace_below_tree_trunk"
+                              }
+                            },
+                            "then": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:dirt"
+                              }
+                            }
+                          }
+                        ]
+                      }
                     }
                   },
                   "placement": []
@@ -1185,15 +1257,8 @@
                 "type": "minecraft:tree",
                 "config": {
                   "ignore_vines": true,
-                  "force_dirt": false,
                   "minimum_size": {
                     "type": "minecraft:two_layers_feature_size"
-                  },
-                  "dirt_provider": {
-                    "type": "minecraft:simple_state_provider",
-                    "state": {
-                      "Name": "minecraft:dirt"
-                    }
                   },
                   "trunk_provider": {
                     "type": "minecraft:simple_state_provider",
@@ -1230,13 +1295,24 @@
                     {
                       "type": "minecraft:alter_ground",
                       "provider": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                          "Name": "minecraft:podzol",
-                          "Properties": {
-                            "snowy": "false"
+                        "type": "minecraft:rule_based_state_provider",
+                        "rules": [
+                          {
+                            "if_true": {
+                              "type": "minecraft:matching_block_tag",
+                              "tag": "minecraft:beneath_tree_podzol_replaceable"
+                            },
+                            "then": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:podzol",
+                                "Properties": {
+                                  "snowy": "false"
+                                }
+                              }
+                            }
                           }
-                        }
+                        ]
                       }
                     },
                     {
@@ -1541,7 +1617,27 @@
                       "radius": 4,
                       "tries": 250
                     }
-                  ]
+                  ],
+                  "below_trunk_provider": {
+                    "type": "minecraft:rule_based_state_provider",
+                    "rules": [
+                      {
+                        "if_true": {
+                          "type": "minecraft:not",
+                          "predicate": {
+                            "type": "minecraft:matching_block_tag",
+                            "tag": "minecraft:cannot_replace_below_tree_trunk"
+                          }
+                        },
+                        "then": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:dirt"
+                          }
+                        }
+                      }
+                    ]
+                  }
                 }
               },
               "placement": [

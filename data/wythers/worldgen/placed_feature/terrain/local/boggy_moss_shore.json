@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -29,7 +30,9 @@
               1,
               0
             ],
-            "blocks": "minecraft:air"
+            "blocks": [
+              "minecraft:air"
+            ]
           },
           {
             "type": "minecraft:not",
@@ -43,7 +46,9 @@
                     -1,
                     0
                   ],
-                  "blocks": "minecraft:air"
+                  "blocks": [
+                    "minecraft:air"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -52,7 +57,9 @@
                     -1,
                     0
                   ],
-                  "blocks": "minecraft:air"
+                  "blocks": [
+                    "minecraft:air"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -61,7 +68,9 @@
                     -1,
                     1
                   ],
-                  "blocks": "minecraft:air"
+                  "blocks": [
+                    "minecraft:air"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -70,7 +79,9 @@
                     -1,
                     -1
                   ],
-                  "blocks": "minecraft:air"
+                  "blocks": [
+                    "minecraft:air"
+                  ]
                 }
               ]
             }
@@ -85,7 +96,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -114,7 +128,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 62
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 62
+        }
       }
     },
     {
@@ -124,7 +141,9 @@
       "type": "minecraft:block_predicate_filter",
       "predicate": {
         "type": "minecraft:matching_fluids",
-        "fluids": "minecraft:water"
+        "fluids": [
+          "minecraft:water"
+        ]
       }
     }
   ]

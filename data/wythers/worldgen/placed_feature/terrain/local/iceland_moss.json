@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -22,8 +23,8 @@
               0
             ],
             "blocks": [
-              "air",
-              "snow"
+              "minecraft:air",
+              "minecraft:snow"
             ]
           },
           {
@@ -48,8 +49,8 @@
                     0
                   ],
                   "blocks": [
-                    "air",
-                    "snow"
+                    "minecraft:air",
+                    "minecraft:snow"
                   ]
                 },
                 {
@@ -60,8 +61,8 @@
                     0
                   ],
                   "blocks": [
-                    "air",
-                    "snow"
+                    "minecraft:air",
+                    "minecraft:snow"
                   ]
                 },
                 {
@@ -72,8 +73,8 @@
                     1
                   ],
                   "blocks": [
-                    "air",
-                    "snow"
+                    "minecraft:air",
+                    "minecraft:snow"
                   ]
                 },
                 {
@@ -84,8 +85,8 @@
                     -1
                   ],
                   "blocks": [
-                    "air",
-                    "snow"
+                    "minecraft:air",
+                    "minecraft:snow"
                   ]
                 }
               ]
@@ -109,7 +110,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 0
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 0
+        }
       }
     },
     {

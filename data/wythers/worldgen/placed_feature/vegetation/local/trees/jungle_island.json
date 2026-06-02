@@ -15,7 +15,9 @@
                   "predicates": [
                     {
                       "type": "minecraft:matching_blocks",
-                      "blocks": "minecraft:air"
+                      "blocks": [
+                        "minecraft:air"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -24,7 +26,9 @@
                         -1,
                         0
                       ],
-                      "blocks": "minecraft:sand"
+                      "blocks": [
+                        "minecraft:sand"
+                      ]
                     }
                   ]
                 }
@@ -63,7 +67,44 @@
     },
     {
       "type": "minecraft:heightmap",
-      "heightmap": "MOTION_BLOCKING"
+      "heightmap": "OCEAN_FLOOR"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:not",
+        "predicate": {
+          "type": "minecraft:any_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -2,
+                0
+              ],
+              "blocks": [
+                "minecraft:air",
+                "minecraft:cave_air",
+                "minecraft:void_air"
+              ]
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -3,
+                0
+              ],
+              "blocks": [
+                "minecraft:air",
+                "minecraft:cave_air",
+                "minecraft:void_air"
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "type": "minecraft:biome"

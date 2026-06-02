@@ -10,6 +10,7 @@
                 "feature": {
                   "config": {
                     "state_provider": {
+                      "type": "minecraft:rule_based_state_provider",
                       "fallback": {
                         "type": "minecraft:simple_state_provider",
                         "state": {
@@ -50,7 +51,10 @@
           {
             "type": "minecraft:height_range",
             "height": {
-              "absolute": 100
+              "type": "minecraft:constant",
+              "value": {
+                "absolute": 100
+              }
             }
           }
         ]
@@ -59,6 +63,7 @@
         "feature": {
           "config": {
             "state_provider": {
+              "type": "minecraft:rule_based_state_provider",
               "fallback": {
                 "type": "minecraft:simple_state_provider",
                 "state": {
@@ -100,7 +105,10 @@
           {
             "type": "minecraft:height_range",
             "height": {
-              "absolute": 100
+              "type": "minecraft:constant",
+              "value": {
+                "absolute": 100
+              }
             }
           },
           {

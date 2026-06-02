@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -170,7 +171,9 @@
                       -1,
                       0
                     ],
-                    "blocks": "minecraft:coarse_dirt"
+                    "blocks": [
+                      "minecraft:coarse_dirt"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -179,7 +182,9 @@
                       1,
                       0
                     ],
-                    "blocks": "minecraft:air"
+                    "blocks": [
+                      "minecraft:air"
+                    ]
                   }
                 ]
               }
@@ -195,7 +200,9 @@
       },
       "target": {
         "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:moss_block"
+        "blocks": [
+          "minecraft:moss_block"
+        ]
       },
       "radius": 3,
       "half_height": 1

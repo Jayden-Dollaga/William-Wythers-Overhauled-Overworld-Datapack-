@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -34,7 +35,9 @@
               },
               {
                 "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:calcite"
+                "blocks": [
+                  "minecraft:calcite"
+                ]
               },
               {
                 "type": "minecraft:any_of",
@@ -294,7 +297,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 0
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 0
+        }
       }
     },
     {

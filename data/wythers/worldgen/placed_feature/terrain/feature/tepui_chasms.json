@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -21,11 +22,15 @@
                     1,
                     0
                   ],
-                  "blocks": "minecraft:dripstone_block"
+                  "blocks": [
+                    "minecraft:dripstone_block"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
-                  "blocks": "minecraft:deepslate"
+                  "blocks": [
+                    "minecraft:deepslate"
+                  ]
                 }
               ]
             },
@@ -55,7 +60,9 @@
                       1,
                       0
                     ],
-                    "blocks": "minecraft:cave_air"
+                    "blocks": [
+                      "minecraft:cave_air"
+                    ]
                   }
                 }
               ]
@@ -109,7 +116,9 @@
                       1,
                       0
                     ],
-                    "blocks": "minecraft:cave_air"
+                    "blocks": [
+                      "minecraft:cave_air"
+                    ]
                   }
                 }
               ]
@@ -152,7 +161,9 @@
                       1,
                       0
                     ],
-                    "blocks": "minecraft:cave_air"
+                    "blocks": [
+                      "minecraft:cave_air"
+                    ]
                   }
                 }
               ]
@@ -178,7 +189,9 @@
                     0,
                     0
                   ],
-                  "fluids": "minecraft:water"
+                  "fluids": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_fluids",
@@ -187,7 +200,9 @@
                     0,
                     0
                   ],
-                  "fluids": "minecraft:water"
+                  "fluids": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_fluids",
@@ -196,7 +211,9 @@
                     0,
                     1
                   ],
-                  "fluids": "minecraft:water"
+                  "fluids": [
+                    "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_fluids",
@@ -205,7 +222,9 @@
                     0,
                     -1
                   ],
-                  "fluids": "minecraft:water"
+                  "fluids": [
+                    "minecraft:water"
+                  ]
                 }
               ]
             },
@@ -283,7 +302,9 @@
                       0,
                       0
                     ],
-                    "blocks": "minecraft:cave_air"
+                    "blocks": [
+                      "minecraft:cave_air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -292,7 +313,9 @@
                       0,
                       0
                     ],
-                    "blocks": "minecraft:cave_air"
+                    "blocks": [
+                      "minecraft:cave_air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -301,7 +324,9 @@
                       0,
                       1
                     ],
-                    "blocks": "minecraft:cave_air"
+                    "blocks": [
+                      "minecraft:cave_air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -310,7 +335,9 @@
                       0,
                       -1
                     ],
-                    "blocks": "minecraft:cave_air"
+                    "blocks": [
+                      "minecraft:cave_air"
+                    ]
                   }
                 ]
               }
@@ -330,7 +357,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -399,7 +429,7 @@
             "predicate": {
               "type": "minecraft:matching_blocks",
               "blocks": [
-                "air",
+                "minecraft:air",
                 "minecraft:cave_air"
               ]
             }

@@ -2,6 +2,7 @@
   "feature": {
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -12,7 +13,9 @@
           {
             "if_true": {
               "type": "minecraft:matching_blocks",
-              "blocks": "minecraft:oak_planks"
+              "blocks": [
+                "minecraft:oak_planks"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -24,7 +27,9 @@
           {
             "if_true": {
               "type": "minecraft:matching_blocks",
-              "blocks": "minecraft:oak_fence"
+              "blocks": [
+                "minecraft:oak_fence"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -62,7 +67,9 @@
           -3,
           0
         ],
-        "fluids": "minecraft:lava"
+        "fluids": [
+          "minecraft:lava"
+        ]
       }
     },
     {

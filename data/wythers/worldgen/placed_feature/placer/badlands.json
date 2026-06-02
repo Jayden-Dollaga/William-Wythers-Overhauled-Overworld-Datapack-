@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -14,7 +15,7 @@
             "if_true": {
               "type": "minecraft:matching_blocks",
               "blocks": [
-                "oak_wood"
+                "minecraft:oak_wood"
               ]
             },
             "then": {
@@ -28,8 +29,8 @@
             "if_true": {
               "type": "minecraft:matching_blocks",
               "blocks": [
-                "smooth_sandstone",
-                "cut_sandstone"
+                "minecraft:smooth_sandstone",
+                "minecraft:cut_sandstone"
               ]
             },
             "then": {
@@ -76,7 +77,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     }
   ]

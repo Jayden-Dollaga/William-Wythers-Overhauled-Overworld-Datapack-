@@ -2,10 +2,11 @@
   "feature": {
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "sand"
+            "Name": "minecraft:sand"
           }
         },
         "rules": [
@@ -18,8 +19,8 @@
                 0
               ],
               "blocks": [
-                "air",
-                "water"
+                "minecraft:air",
+                "minecraft:water"
               ]
             },
             "then": {
@@ -45,7 +46,9 @@
               },
               {
                 "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:dirt_path"
+                "blocks": [
+                  "minecraft:dirt_path"
+                ]
               }
             ]
           },
@@ -53,7 +56,9 @@
             "type": "minecraft:not",
             "predicate": {
               "type": "minecraft:matching_blocks",
-              "blocks": "minecraft:suspicious_sand"
+              "blocks": [
+                "minecraft:suspicious_sand"
+              ]
             }
           }
         ]
@@ -65,7 +70,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -82,7 +90,9 @@
                 1,
                 0
               ],
-              "blocks": "minecraft:moss_block"
+              "blocks": [
+                "minecraft:moss_block"
+              ]
             }
           },
           {

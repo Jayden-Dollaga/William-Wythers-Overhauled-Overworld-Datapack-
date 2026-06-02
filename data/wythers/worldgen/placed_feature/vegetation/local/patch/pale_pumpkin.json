@@ -65,7 +65,9 @@
                         -1,
                         0
                       ],
-                      "blocks": "minecraft:grass_block"
+                      "blocks": [
+                        "minecraft:grass_block"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -172,192 +174,212 @@
       ],
       "default": {
         "feature": {
-          "type": "minecraft:random_patch",
+          "type": "minecraft:simple_random_selector",
           "config": {
-            "tries": 5,
-            "xz_spread": 3,
-            "y_spread": 2,
-            "feature": {
-              "feature": {
-                "type": "minecraft:simple_block",
-                "config": {
-                  "to_place": {
-                    "type": "minecraft:weighted_state_provider",
-                    "entries": [
-                      {
-                        "weight": 1,
-                        "data": {
-                          "Name": "minecraft:carved_pumpkin",
-                          "Properties": {
-                            "facing": "north"
+            "features": [
+              {
+                "feature": {
+                  "type": "minecraft:simple_block",
+                  "config": {
+                    "to_place": {
+                      "type": "minecraft:weighted_state_provider",
+                      "entries": [
+                        {
+                          "weight": 1,
+                          "data": {
+                            "Name": "minecraft:carved_pumpkin",
+                            "Properties": {
+                              "facing": "north"
+                            }
+                          }
+                        },
+                        {
+                          "weight": 1,
+                          "data": {
+                            "Name": "minecraft:carved_pumpkin",
+                            "Properties": {
+                              "facing": "south"
+                            }
+                          }
+                        },
+                        {
+                          "weight": 1,
+                          "data": {
+                            "Name": "minecraft:carved_pumpkin",
+                            "Properties": {
+                              "facing": "west"
+                            }
+                          }
+                        },
+                        {
+                          "weight": 1,
+                          "data": {
+                            "Name": "minecraft:carved_pumpkin",
+                            "Properties": {
+                              "facing": "east"
+                            }
+                          }
+                        },
+                        {
+                          "weight": 8,
+                          "data": {
+                            "Name": "minecraft:pumpkin"
                           }
                         }
-                      },
-                      {
-                        "weight": 1,
-                        "data": {
-                          "Name": "minecraft:carved_pumpkin",
-                          "Properties": {
-                            "facing": "south"
-                          }
-                        }
-                      },
-                      {
-                        "weight": 1,
-                        "data": {
-                          "Name": "minecraft:carved_pumpkin",
-                          "Properties": {
-                            "facing": "west"
-                          }
-                        }
-                      },
-                      {
-                        "weight": 1,
-                        "data": {
-                          "Name": "minecraft:carved_pumpkin",
-                          "Properties": {
-                            "facing": "east"
-                          }
-                        }
-                      },
-                      {
-                        "weight": 8,
-                        "data": {
-                          "Name": "minecraft:pumpkin"
-                        }
-                      }
-                    ]
+                      ]
+                    }
                   }
-                }
-              },
-              "placement": [
-                {
-                  "type": "minecraft:block_predicate_filter",
-                  "predicate": {
-                    "type": "minecraft:all_of",
-                    "predicates": [
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          0,
-                          -1,
-                          0
-                        ],
-                        "blocks": "minecraft:grass_block"
-                      },
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          1,
-                          0,
-                          1
-                        ],
-                        "blocks": [
-                        "minecraft:air",
-                        "minecraft:short_grass"
+                },
+                "placement": [
+                  {
+                    "type": "minecraft:count",
+                    "count": 5
+                  },
+                  {
+                    "type": "minecraft:random_offset",
+                    "xz_spread": {
+                      "type": "minecraft:trapezoid",
+                      "min": -3,
+                      "max": 3,
+                      "plateau": 0
+                    },
+                    "y_spread": {
+                      "type": "minecraft:trapezoid",
+                      "min": -2,
+                      "max": 2,
+                      "plateau": 0
+                    }
+                  },
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:all_of",
+                      "predicates": [
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            0,
+                            -1,
+                            0
+                          ],
+                          "blocks": [
+                            "minecraft:grass_block"
+                          ]
+                        },
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            1,
+                            0,
+                            1
+                          ],
+                          "blocks": [
+                            "minecraft:air",
+                            "minecraft:short_grass"
+                          ]
+                        },
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            1,
+                            0,
+                            0
+                          ],
+                          "blocks": [
+                            "minecraft:air",
+                            "minecraft:short_grass"
+                          ]
+                        },
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            1,
+                            0,
+                            -1
+                          ],
+                          "blocks": [
+                            "minecraft:air",
+                            "minecraft:short_grass"
+                          ]
+                        },
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            0,
+                            0,
+                            1
+                          ],
+                          "blocks": [
+                            "minecraft:air",
+                            "minecraft:short_grass"
+                          ]
+                        },
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "blocks": [
+                            "minecraft:air",
+                            "minecraft:short_grass"
+                          ]
+                        },
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            0,
+                            0,
+                            -1
+                          ],
+                          "blocks": [
+                            "minecraft:air",
+                            "minecraft:short_grass"
+                          ]
+                        },
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            -1,
+                            0,
+                            1
+                          ],
+                          "blocks": [
+                            "minecraft:air",
+                            "minecraft:short_grass"
+                          ]
+                        },
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            -1,
+                            0,
+                            0
+                          ],
+                          "blocks": [
+                            "minecraft:air",
+                            "minecraft:short_grass"
+                          ]
+                        },
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            -1,
+                            0,
+                            -1
+                          ],
+                          "blocks": [
+                            "minecraft:air",
+                            "minecraft:short_grass"
+                          ]
+                        }
                       ]
-                      },
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          1,
-                          0,
-                          0
-                        ],
-                        "blocks": [
-                        "minecraft:air",
-                        "minecraft:short_grass"
-                      ]
-                      },
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          1,
-                          0,
-                          -1
-                        ],
-                        "blocks": [
-                        "minecraft:air",
-                        "minecraft:short_grass"
-                      ]
-                      },
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          0,
-                          0,
-                          1
-                        ],
-                        "blocks": [
-                        "minecraft:air",
-                        "minecraft:short_grass"
-                      ]
-                      },
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          0,
-                          0,
-                          0
-                        ],
-                        "blocks": [
-                        "minecraft:air",
-                        "minecraft:short_grass"
-                      ]
-                      },
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          0,
-                          0,
-                          -1
-                        ],
-                        "blocks": [
-                        "minecraft:air",
-                        "minecraft:short_grass"
-                      ]
-                      },
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          -1,
-                          0,
-                          1
-                        ],
-                        "blocks": [
-                        "minecraft:air",
-                        "minecraft:short_grass"
-                      ]
-                      },
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          -1,
-                          0,
-                          0
-                        ],
-                        "blocks": [
-                        "minecraft:air",
-                        "minecraft:short_grass"
-                      ]
-                      },
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          -1,
-                          0,
-                          -1
-                        ],
-                        "blocks": [
-                        "minecraft:air",
-                        "minecraft:short_grass"
-                      ]
-                      }
-                    ]
+                    }
                   }
-                }
-              ]
-            }
+                ]
+              }
+            ]
           }
         },
         "placement": [
@@ -365,7 +387,9 @@
             "type": "minecraft:block_predicate_filter",
             "predicate": {
               "type": "minecraft:matching_blocks",
-              "blocks": "minecraft:jack_o_lantern"
+              "blocks": [
+                "minecraft:jack_o_lantern"
+              ]
             }
           },
           {

@@ -1,149 +1,156 @@
 {
   "feature": {
-  "type": "minecraft:random_selector",
-  "config": {
-    "features": [
-      {
-        "chance": 0.05,
-        "feature": {
-          "feature": "wythers:vegetation/tree/olive",
-          "placement": [
-            {
-              "type": "minecraft:block_predicate_filter",
-              "predicate": {
-                "type": "minecraft:matching_blocks",
-                "offset": [
-                  0,
-                  0,
-                  0
-                ],
-                "blocks": "minecraft:air"
-              }
-            },
-            {
-              "type": "minecraft:block_predicate_filter",
-              "predicate": {
-                "type": "minecraft:matching_blocks",
-                "offset": [
-                  0,
-                  -1,
-                  0
-                ],
-                "blocks": [
-                  "minecraft:grass_block",
-                  "minecraft:packed_mud"
-                ]
-              }
-            }
-          ]
-        }
-      },
-      {
-        "chance": 0.6,
-        "feature": {
-          "feature": "wythers:vegetation/tree/scrub_birch",
-          "placement": [
-            {
-              "type": "minecraft:block_predicate_filter",
-              "predicate": {
-                "type": "minecraft:matching_blocks",
-                "offset": [
-                  0,
-                  0,
-                  0
-                ],
-                "blocks": "minecraft:air"
-              }
-            },
-            {
-              "type": "minecraft:block_predicate_filter",
-              "predicate": {
-                "type": "minecraft:matching_blocks",
-                "offset": [
-                  0,
-                  -1,
-                  0
-                ],
-                "blocks": [
-                  "minecraft:grass_block",
-                  "minecraft:packed_mud"
-                ]
-              }
-            }
-          ]
-        }
-      },
-      {
-        "chance": 0.4,
-        "feature": {
-          "feature": "wythers:vegetation/tree/scrub_spruce",
-          "placement": [
-            {
-              "type": "minecraft:block_predicate_filter",
-              "predicate": {
-                "type": "minecraft:matching_blocks",
-                "offset": [
-                  0,
-                  0,
-                  0
-                ],
-                "blocks": "minecraft:air"
-              }
-            },
-            {
-              "type": "minecraft:block_predicate_filter",
-              "predicate": {
-                "type": "minecraft:matching_blocks",
-                "offset": [
-                  0,
-                  -1,
-                  0
-                ],
-                "blocks": [
-                  "minecraft:grass_block",
-                  "minecraft:packed_mud"
-                ]
-              }
-            }
-          ]
-        }
-      }
-    ],
-    "default": {
-      "feature": "wythers:vegetation/tree/scrub_oak",
-      "placement": [
+    "type": "minecraft:random_selector",
+    "config": {
+      "features": [
         {
-          "type": "minecraft:block_predicate_filter",
-          "predicate": {
-            "type": "minecraft:matching_blocks",
-            "offset": [
-              0,
-              0,
-              0
-            ],
-            "blocks": "minecraft:air"
+          "chance": 0.05,
+          "feature": {
+            "feature": "wythers:vegetation/tree/olive",
+            "placement": [
+              {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "blocks": [
+                    "minecraft:air"
+                  ]
+                }
+              },
+              {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "blocks": [
+                    "minecraft:grass_block",
+                    "minecraft:packed_mud"
+                  ]
+                }
+              }
+            ]
           }
         },
         {
-          "type": "minecraft:block_predicate_filter",
-          "predicate": {
-            "type": "minecraft:matching_blocks",
-            "offset": [
-              0,
-              -1,
-              0
-            ],
-            "blocks": [
-              "minecraft:grass_block",
-              "minecraft:packed_mud"
+          "chance": 0.6,
+          "feature": {
+            "feature": "wythers:vegetation/tree/scrub_birch",
+            "placement": [
+              {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "blocks": [
+                    "minecraft:air"
+                  ]
+                }
+              },
+              {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "blocks": [
+                    "minecraft:grass_block",
+                    "minecraft:packed_mud"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "chance": 0.4,
+          "feature": {
+            "feature": "wythers:vegetation/tree/scrub_spruce",
+            "placement": [
+              {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "blocks": [
+                    "minecraft:air"
+                  ]
+                }
+              },
+              {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "blocks": [
+                    "minecraft:grass_block",
+                    "minecraft:packed_mud"
+                  ]
+                }
+              }
             ]
           }
         }
-      ]
+      ],
+      "default": {
+        "feature": "wythers:vegetation/tree/scrub_oak",
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "blocks": [
+                "minecraft:air"
+              ]
+            }
+          },
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -1,
+                0
+              ],
+              "blocks": [
+                "minecraft:grass_block",
+                "minecraft:packed_mud"
+              ]
+            }
+          }
+        ]
+      }
     }
-  }
-}
-,
+  },
   "placement": [
     {
       "type": "minecraft:noise_based_count",
@@ -159,6 +166,43 @@
       "heightmap": "WORLD_SURFACE_WG"
     },
     {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:not",
+        "predicate": {
+          "type": "minecraft:any_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -2,
+                0
+              ],
+              "blocks": [
+                "minecraft:air",
+                "minecraft:cave_air",
+                "minecraft:void_air"
+              ]
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -3,
+                0
+              ],
+              "blocks": [
+                "minecraft:air",
+                "minecraft:cave_air",
+                "minecraft:void_air"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
       "type": "minecraft:surface_water_depth_filter",
       "max_water_depth": 0
     },
@@ -169,7 +213,9 @@
         "predicates": [
           {
             "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:air"
+            "blocks": [
+              "minecraft:air"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",

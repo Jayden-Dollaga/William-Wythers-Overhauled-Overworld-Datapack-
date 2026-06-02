@@ -3,6 +3,7 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -34,7 +35,7 @@
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "birch_log"
+                "Name": "minecraft:birch_log"
               }
             }
           },
@@ -48,7 +49,7 @@
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "stripped_birch_wood"
+                "Name": "minecraft:stripped_birch_wood"
               }
             }
           },
@@ -57,14 +58,14 @@
               "type": "minecraft:matching_blocks",
               "blocks": [
                 "minecraft:jungle_wood",
-              "minecraft:bamboo_block",
-              "minecraft:lime_terracotta"
+                "minecraft:bamboo_block",
+                "minecraft:lime_terracotta"
               ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
               "state": {
-                "Name": "lime_concrete"
+                "Name": "minecraft:lime_concrete"
               }
             }
           }
@@ -108,7 +109,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     }
   ]

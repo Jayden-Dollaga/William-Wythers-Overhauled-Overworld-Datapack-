@@ -47,7 +47,9 @@
           1,
           0
         ],
-        "blocks": "minecraft:pale_oak_log"
+        "blocks": [
+          "minecraft:pale_oak_log"
+        ]
       }
     },
     {

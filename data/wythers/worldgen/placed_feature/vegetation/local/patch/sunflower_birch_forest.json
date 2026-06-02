@@ -1,10 +1,13 @@
 {
-  "feature": "minecraft:patch_sunflower",
+  "feature": "minecraft:sunflower",
   "placement": [
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 1
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 1
+        }
       }
     },
     {

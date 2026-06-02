@@ -1,10 +1,13 @@
 {
-  "feature": "minecraft:wildflowers_birch_forest",
+  "feature": "minecraft:wildflower",
   "placement": [
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -15,8 +18,8 @@
           {
             "type": "minecraft:matching_blocks",
             "blocks": [
-              "birch_wood",
-              "dark_oak_wood"
+              "minecraft:birch_wood",
+              "minecraft:dark_oak_wood"
             ]
           },
           {

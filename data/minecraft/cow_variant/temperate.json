@@ -1,5 +1,5 @@
 {
-  "asset_id": "minecraft:entity/cow/temperate_cow",
+  "asset_id": "minecraft:entity/cow/cow_temperate",
   "spawn_conditions": [
     {
       "priority": 0
@@ -8,12 +8,13 @@
       "condition": {
         "type": "minecraft:biome",
         "biomes": [
-    "minecraft:dark_forest",
-    "minecraft:birch_forest",
-    "minecraft:old_growth_birch_forest"
-  ]
+          "minecraft:dark_forest",
+          "minecraft:birch_forest",
+          "minecraft:old_growth_birch_forest"
+        ]
       },
       "priority": 1
     }
-  ]
+  ],
+  "baby_asset_id": "minecraft:entity/cow/cow_temperate_baby"
 }

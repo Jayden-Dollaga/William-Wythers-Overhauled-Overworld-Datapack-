@@ -8,6 +8,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -38,7 +39,9 @@
                             2,
                             0
                           ],
-                          "blocks": "minecraft:air"
+                          "blocks": [
+                            "minecraft:air"
+                          ]
                         }
                       ]
                     },
@@ -53,7 +56,9 @@
               },
               "target": {
                 "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:red_terracotta"
+                "blocks": [
+                  "minecraft:red_terracotta"
+                ]
               },
               "radius": 4,
               "half_height": 4
@@ -66,6 +71,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -96,7 +102,9 @@
                             2,
                             0
                           ],
-                          "blocks": "minecraft:air"
+                          "blocks": [
+                            "minecraft:air"
+                          ]
                         }
                       ]
                     },
@@ -111,7 +119,9 @@
               },
               "target": {
                 "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:orange_terracotta"
+                "blocks": [
+                  "minecraft:orange_terracotta"
+                ]
               },
               "radius": 4,
               "half_height": 4
@@ -124,6 +134,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -154,7 +165,9 @@
                             2,
                             0
                           ],
-                          "blocks": "minecraft:air"
+                          "blocks": [
+                            "minecraft:air"
+                          ]
                         }
                       ]
                     },
@@ -169,7 +182,9 @@
               },
               "target": {
                 "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:terracotta"
+                "blocks": [
+                  "minecraft:terracotta"
+                ]
               },
               "radius": 4,
               "half_height": 4
@@ -182,6 +197,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -212,7 +228,9 @@
                             2,
                             0
                           ],
-                          "blocks": "minecraft:air"
+                          "blocks": [
+                            "minecraft:air"
+                          ]
                         }
                       ]
                     },
@@ -227,7 +245,9 @@
               },
               "target": {
                 "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:packed_mud"
+                "blocks": [
+                  "minecraft:packed_mud"
+                ]
               },
               "radius": 4,
               "half_height": 4
@@ -242,7 +262,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
@@ -278,7 +301,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "absolute": 0
+        "type": "minecraft:constant",
+        "value": {
+          "absolute": 0
+        }
       }
     },
     {

@@ -1,7 +1,7 @@
 {
   "feature": "wythers:decor/patch_floating_lanterns",
   "placement": [
-   {
+    {
       "type": "minecraft:rarity_filter",
       "chance": 1
     },

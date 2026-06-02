@@ -77,7 +77,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 1
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 1
+        }
       }
     },
     {
@@ -86,7 +89,9 @@
         "type": "minecraft:not",
         "predicate": {
           "type": "minecraft:matching_blocks",
-          "blocks": "minecraft:dripstone_block"
+          "blocks": [
+            "minecraft:dripstone_block"
+          ]
         }
       }
     },
@@ -104,8 +109,45 @@
       "type": "minecraft:random_offset"
     },
     {
-      "heightmap": "MOTION_BLOCKING",
+      "heightmap": "OCEAN_FLOOR",
       "type": "minecraft:heightmap"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:not",
+        "predicate": {
+          "type": "minecraft:any_of",
+          "predicates": [
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -2,
+                0
+              ],
+              "blocks": [
+                "minecraft:air",
+                "minecraft:cave_air",
+                "minecraft:void_air"
+              ]
+            },
+            {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -3,
+                0
+              ],
+              "blocks": [
+                "minecraft:air",
+                "minecraft:cave_air",
+                "minecraft:void_air"
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "predicate": {
@@ -199,7 +241,9 @@
         "predicate": {
           "predicates": [
             {
-              "blocks": "minecraft:spruce_log",
+              "blocks": [
+                "minecraft:spruce_log"
+              ],
               "offset": [
                 4,
                 15,
@@ -208,7 +252,9 @@
               "type": "minecraft:matching_blocks"
             },
             {
-              "blocks": "minecraft:spruce_log",
+              "blocks": [
+                "minecraft:spruce_log"
+              ],
               "offset": [
                 4,
                 15,
@@ -217,7 +263,9 @@
               "type": "minecraft:matching_blocks"
             },
             {
-              "blocks": "minecraft:spruce_log",
+              "blocks": [
+                "minecraft:spruce_log"
+              ],
               "offset": [
                 0,
                 15,
@@ -226,7 +274,9 @@
               "type": "minecraft:matching_blocks"
             },
             {
-              "blocks": "minecraft:spruce_log",
+              "blocks": [
+                "minecraft:spruce_log"
+              ],
               "offset": [
                 -4,
                 15,
@@ -235,7 +285,9 @@
               "type": "minecraft:matching_blocks"
             },
             {
-              "blocks": "minecraft:spruce_log",
+              "blocks": [
+                "minecraft:spruce_log"
+              ],
               "offset": [
                 -4,
                 15,
@@ -244,7 +296,9 @@
               "type": "minecraft:matching_blocks"
             },
             {
-              "blocks": "minecraft:spruce_log",
+              "blocks": [
+                "minecraft:spruce_log"
+              ],
               "offset": [
                 -4,
                 15,
@@ -253,7 +307,9 @@
               "type": "minecraft:matching_blocks"
             },
             {
-              "blocks": "minecraft:spruce_log",
+              "blocks": [
+                "minecraft:spruce_log"
+              ],
               "offset": [
                 0,
                 15,
@@ -262,7 +318,9 @@
               "type": "minecraft:matching_blocks"
             },
             {
-              "blocks": "minecraft:spruce_log",
+              "blocks": [
+                "minecraft:spruce_log"
+              ],
               "offset": [
                 4,
                 15,

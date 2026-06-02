@@ -8,6 +8,7 @@
             "type": "minecraft:disk",
             "config": {
               "state_provider": {
+                "type": "minecraft:rule_based_state_provider",
                 "fallback": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
@@ -35,7 +36,7 @@
                           0
                         ],
                         "blocks": [
-                          "smooth_basalt"
+                          "minecraft:smooth_basalt"
                         ]
                       }
                     ]
@@ -120,7 +121,10 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "above_bottom": 0
+        "type": "minecraft:constant",
+        "value": {
+          "above_bottom": 0
+        }
       }
     },
     {
