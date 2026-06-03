@@ -191,6 +191,10 @@
   },
   "placement": [
     {
+      "type": "minecraft:count",
+      "count": 8
+    },
+    {
       "type": "minecraft:rarity_filter",
       "chance": 3
     },

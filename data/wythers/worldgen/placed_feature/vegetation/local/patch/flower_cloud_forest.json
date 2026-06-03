@@ -279,6 +279,10 @@
   },
   "placement": [
     {
+      "type": "minecraft:count",
+      "count": 8
+    },
+    {
       "type": "minecraft:height_range",
       "height": {
         "type": "minecraft:constant",

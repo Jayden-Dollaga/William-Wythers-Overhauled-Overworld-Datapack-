@@ -55,7 +55,58 @@
                               "offset": 3,
                               "height": 5
                             },
-                            "decorators": [],
+                            "decorators": [
+                              {
+                                "type": "minecraft:alter_ground",
+                                "provider": {
+                                  "type": "minecraft:rule_based_state_provider",
+                                  "rules": [
+                                    {
+                                      "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": [
+                                          "minecraft:grass_block",
+                                          "minecraft:podzol",
+                                          "minecraft:dirt",
+                                          "minecraft:coarse_dirt",
+                                          "minecraft:rooted_dirt",
+                                          "minecraft:moss_block",
+                                          "minecraft:mud",
+                                          "minecraft:muddy_mangrove_roots",
+                                          "minecraft:mycelium"
+                                        ]
+                                      },
+                                      "then": {
+                                        "type": "minecraft:weighted_state_provider",
+                                        "entries": [
+                                          {
+                                            "weight": 3,
+                                            "data": {
+                                              "Name": "minecraft:rooted_dirt"
+                                            }
+                                          },
+                                          {
+                                            "weight": 1,
+                                            "data": {
+                                              "Name": "minecraft:coarse_dirt"
+                                            }
+                                          },
+                                          {
+                                            "weight": 1,
+                                            "data": {
+                                              "Name": "minecraft:podzol",
+                                              "Properties": {
+                                                "snowy": "false"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ],
                             "below_trunk_provider": {
                               "type": "minecraft:rule_based_state_provider",
                               "rules": [
@@ -144,6 +195,56 @@
                                 "directions": [
                                   "down"
                                 ]
+                              },
+                              {
+                                "type": "minecraft:alter_ground",
+                                "provider": {
+                                  "type": "minecraft:rule_based_state_provider",
+                                  "rules": [
+                                    {
+                                      "if_true": {
+                                        "type": "minecraft:matching_blocks",
+                                        "blocks": [
+                                          "minecraft:grass_block",
+                                          "minecraft:podzol",
+                                          "minecraft:dirt",
+                                          "minecraft:coarse_dirt",
+                                          "minecraft:rooted_dirt",
+                                          "minecraft:moss_block",
+                                          "minecraft:mud",
+                                          "minecraft:muddy_mangrove_roots",
+                                          "minecraft:mycelium"
+                                        ]
+                                      },
+                                      "then": {
+                                        "type": "minecraft:weighted_state_provider",
+                                        "entries": [
+                                          {
+                                            "weight": 3,
+                                            "data": {
+                                              "Name": "minecraft:rooted_dirt"
+                                            }
+                                          },
+                                          {
+                                            "weight": 1,
+                                            "data": {
+                                              "Name": "minecraft:coarse_dirt"
+                                            }
+                                          },
+                                          {
+                                            "weight": 1,
+                                            "data": {
+                                              "Name": "minecraft:podzol",
+                                              "Properties": {
+                                                "snowy": "false"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
                               }
                             ],
                             "below_trunk_provider": {
