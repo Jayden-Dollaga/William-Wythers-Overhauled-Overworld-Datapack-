@@ -391,7 +391,7 @@
             "placement": [
               {
                 "type": "minecraft:count",
-                "count": 3
+                "count": 8
               },
               {
                 "type": "minecraft:heightmap",
@@ -575,6 +575,10 @@
     }
   },
   "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 8
+    },
     {
       "type": "minecraft:rarity_filter",
       "chance": 4

@@ -79,6 +79,7 @@
     ],
     [],
     [
+      "wythers:vegetation/local/trees/willows",
       "wythers:terrain/local/cave_disk_basalt",
       "wythers:terrain/local/cave_disk_blackstone",
       "wythers:terrain/local/cave_disk_magma",

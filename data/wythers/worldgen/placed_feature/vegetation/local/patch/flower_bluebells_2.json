@@ -56,6 +56,10 @@
   },
   "placement": [
     {
+      "type": "minecraft:count",
+      "count": 8
+    },
+    {
       "type": "minecraft:noise_based_count",
       "noise_to_count_ratio": 1,
       "noise_factor": 900,
