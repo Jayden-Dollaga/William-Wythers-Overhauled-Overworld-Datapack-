@@ -56,8 +56,8 @@
                             },
                             "trunk_placer": {
                               "type": "minecraft:cherry_trunk_placer",
-                              "base_height": 15,
-                              "height_rand_a": 3,
+                              "base_height": 12,
+                              "height_rand_a": 2,
                               "height_rand_b": 0,
                               "branch_count": {
                                 "type": "minecraft:weighted_list",
@@ -74,8 +74,8 @@
                               },
                               "branch_horizontal_length": {
                                 "type": "minecraft:uniform",
-                                "min_inclusive": 8,
-                                "max_inclusive": 10
+                                "min_inclusive": 4,
+                                "max_inclusive": 5
                               },
                               "branch_start_offset_from_top": {
                                 "min_inclusive": -4,
@@ -233,8 +233,8 @@
                               },
                               "branch_horizontal_length": {
                                 "type": "minecraft:uniform",
-                                "min_inclusive": 5,
-                                "max_inclusive": 7
+                                "min_inclusive": 4,
+                                "max_inclusive": 5
                               },
                               "branch_start_offset_from_top": {
                                 "min_inclusive": -4,

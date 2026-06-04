@@ -4,7 +4,7 @@
     "config": {
       "features": [
         {
-          "chance": 0.3,
+          "chance": 0.45,
           "feature": {
             "feature": "wythers:vegetation/tree/ancient_birch",
             "placement": []
@@ -61,11 +61,11 @@
         "distribution": [
           {
             "weight": 1,
-            "data": 4
+            "data": 8
           },
           {
             "weight": 1,
-            "data": 5
+            "data": 10
           }
         ]
       }

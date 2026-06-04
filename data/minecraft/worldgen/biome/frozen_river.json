@@ -97,6 +97,7 @@
     ],
     [
       "minecraft:glow_lichen",
+      "wythers:vegetation/local/trees/willows",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal"
     ],

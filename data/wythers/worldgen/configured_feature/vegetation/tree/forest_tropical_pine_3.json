@@ -66,13 +66,17 @@
                       "rules": [
                         {
                           "if_true": {
-                            "type": "minecraft:true"
+                            "type": "minecraft:not",
+                            "predicate": {
+                              "type": "minecraft:matching_block_tag",
+                              "tag": "minecraft:cannot_replace_below_tree_trunk"
+                            }
                           },
                           "then": {
-                            "type": "minecraft:simple_state_provider",
                             "state": {
-                              "Name": "minecraft:rooted_dirt"
-                            }
+                              "Name": "minecraft:dirt"
+                            },
+                            "type": "minecraft:simple_state_provider"
                           }
                         }
                       ]
@@ -141,13 +145,17 @@
                       "rules": [
                         {
                           "if_true": {
-                            "type": "minecraft:true"
+                            "type": "minecraft:not",
+                            "predicate": {
+                              "type": "minecraft:matching_block_tag",
+                              "tag": "minecraft:cannot_replace_below_tree_trunk"
+                            }
                           },
                           "then": {
-                            "type": "minecraft:simple_state_provider",
                             "state": {
-                              "Name": "minecraft:rooted_dirt"
-                            }
+                              "Name": "minecraft:dirt"
+                            },
+                            "type": "minecraft:simple_state_provider"
                           }
                         }
                       ]
@@ -231,13 +239,17 @@
                       "rules": [
                         {
                           "if_true": {
-                            "type": "minecraft:true"
+                            "type": "minecraft:not",
+                            "predicate": {
+                              "type": "minecraft:matching_block_tag",
+                              "tag": "minecraft:cannot_replace_below_tree_trunk"
+                            }
                           },
                           "then": {
-                            "type": "minecraft:simple_state_provider",
                             "state": {
-                              "Name": "minecraft:rooted_dirt"
-                            }
+                              "Name": "minecraft:dirt"
+                            },
+                            "type": "minecraft:simple_state_provider"
                           }
                         }
                       ]

@@ -4,7 +4,7 @@
     "config": {
       "features": [
         {
-          "chance": 0.0,
+          "chance": 0.12,
           "feature": {
             "feature": "wythers:vegetation/tree/willow_large",
             "placement": []
@@ -51,7 +51,7 @@
     },
     {
       "type": "minecraft:count",
-      "count": 1
+      "count": 2
     },
     {
       "type": "minecraft:height_range",
@@ -67,9 +67,9 @@
     },
     {
       "type": "minecraft:surface_relative_threshold_filter",
-      "heightmap": "WORLD_SURFACE",
-      "min_inclusive": -63,
-      "max_inclusive": -63
+      "heightmap": "WORLD_SURFACE_WG",
+      "min_inclusive": -80,
+      "max_inclusive": -60
     },
     {
       "type": "minecraft:heightmap",

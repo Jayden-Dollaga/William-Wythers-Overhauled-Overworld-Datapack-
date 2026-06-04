@@ -86,7 +86,7 @@
     {
       "type": "minecraft:surface_relative_threshold_filter",
       "heightmap": "WORLD_SURFACE_WG",
-      "min_inclusive": -85,
+      "min_inclusive": -256,
       "max_inclusive": -63
     },
     {

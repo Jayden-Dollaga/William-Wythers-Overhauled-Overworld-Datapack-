@@ -1,5 +1,5 @@
 {
-  "feature": "minecraft:sunflower",
+  "feature": "wythers:vegetation/extended/patch/sunflower",
   "placement": [
     {
       "type": "minecraft:height_range",
@@ -13,15 +13,23 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:dripstone_block"
-        ]
+        "type": "minecraft:not",
+        "predicate": {
+          "type": "minecraft:matching_blocks",
+          "offset": [
+            0,
+            1,
+            0
+          ],
+          "blocks": [
+            "minecraft:dripstone_block"
+          ]
+        }
       }
     },
     {
       "type": "minecraft:rarity_filter",
-      "chance": 3
+      "chance": 2
     },
     {
       "type": "minecraft:in_square"
